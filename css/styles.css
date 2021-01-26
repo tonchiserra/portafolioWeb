@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--Header--*/
+header {
+    color: #ffffff;
+    background-image: url(../imgs/homePic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    height: 100vh;
+}
+
+.home {
+    width: 80%;
+    margin: auto;
+    padding: 200px 0 200px 0;
+}
+
+.home p {
+    font-size: 28px;
+}
+
+.home h1 {
+    font-size: 60px;
+
+    padding: 5px 0 5px 0;
+}
+
+.home h3 {
+    font-size: 28px;
+
+    padding-bottom: 30px;
+}
+
+.contactButton {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: #ffffff;
+       
+    border: 2px solid #ffffff;
+    
+    padding: 10px 20px 10px 20px;
+    margin-top: 50px;
+}
+
+.contactButton:hover {
+    color: #ffffff;
+    background-color: #1e90ff;
+
+    border: 2px solid #1e90ff;
+}
+
+.stickyNavMain {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    box-shadow: 0px 1px 6px #000;
+}
+
+.bottomNavMain {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}  
+
+.navMain {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.navMain ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+}
+
+.navMain ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navMain ul a li {
+    list-style: none;
+
+    padding: 15px 0 15px 0;
+}
+
+.navMain ul a li:hover {
+    background-color: #1e90ff;
+}
+
+.navMain .socialNetworks a {
+    font-size: 20px;
+
+    padding: 0 5px 0 5px;
+}
+
+.socialNetworks i:hover {
+    color: #1e90ff;
+}
+
+/*--------Container--------------------------------------------------------------------------------------*/
+.container {
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.title {
+    color: #000;
+    font-size: 64px;
+    text-align: center;
+
+    padding: 25px 0 25px 0;
+    margin: 50px 0 50px 0;
+}
+
+/*-------AboutMe--------------------------------------------------------------------------------------*/
+.aboutMe {
+    padding: 50px 0 100px 0;
+
+    background-color: #dadada;
+}
+
+.contentAboutMe { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+
+    width: 80%;
+    margin: auto;
+
+    background-color: #fff;
+}
+
+.contentAboutMe p {
+    text-align: justify;
+}
+
+.profilePic {
+    margin-right: 0;
+}
+
+/*-------------Technologies------------------------------------------------------------------------------*/
+.technologies {
+    background-color: #fff;
+
+    padding: 50px 0 100px 0;
+}
+
+.contentTechnologies {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+    width: 80%;
+    margin: auto;
+}
+
+.contentTechnologies div {
+    border: 2px solid #000;
+
+    padding: 0;
+}
+
+.progressHTML span{
+    display: inline-block;
+    
+	padding: 10px;
+    width: 60%;
+    
+	background: #1e90ff;
+}
+
+.progressCSS span{
+    display: inline-block;
+    
+	height: 100%;
+	padding: 10px;
+    width: 50%;
+    
+	background: #1e90ff;	
+}
+
+.progressJS span{
+    display: inline-block;
+    
+	height: 100%;
+	padding: 10px;
+    width: 25%;
+    
+	background: #1e90ff;	
+}
+
+.progressNode span{
+    display: inline-block;
+    
+	height: 100%;
+	padding: 10px;
+    width: 5%;
+    
+	background: #1e90ff;	
+}
+
+.progressElectron span{
+    display: inline-block;
+    
+	height: 100%;
+	padding: 10px;
+    width: 25%;
+    
+	background: #1e90ff;	
+}
+
+.progressGit span{
+    display: inline-block;
+    
+	height: 100%;
+	padding: 10px;
+    width: 30%;
+    
+	background: #1e90ff;	
+}
+
+.technologies p {
+    font-size: 18px;
+    text-align: center;
+
+    padding: 50px 0 0 0;
+}
+
+/*-------------AreasOfInterest------------------------------------------------------------------------------*/
+.areasOfInterest {
+    background-color: #fff;
+
+    padding: 50px 0 100px 0;
+}
+
+.contentAreasOfInterest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    width: 80%;
+    margin: auto;
+}
+
+.areas {
+    text-align: center;
+
+    border: 2px solid #000;
+
+    padding: 20px 0 0 0;
+    margin: auto;
+    width: 100%;
+}
+
+.areas img {
+    height: 200px;
+}
+
+.areas p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+
+    padding: 10px 0 10px 0;
+}
+
+
+/*-------------Proyects------------------------------------------------------------------------------*/
+.proyects {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    padding: 50px 0 100px 0;
+}
+
+.proyects .title {
+    color: #ffffff;
+}
+
+.contentProyects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    width: 80%;
+    margin: auto;
+}
+
+.proyect {
+
+}
+
+.slider {
+    overflow: hidden;
+
+    border: 2px solid #fff;
+    border-bottom: none;
+}
+
+.slider .proyectPics{
+    display: flex;
+
+    padding: 0;
+    width: 300%;
+
+    animation: slide 9s infinite ;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.proyectPics li {
+    list-style: none;
+
+    width: 100%;
+    height: 300px;
+}
+
+.proyectPics li img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proyect a {
+    text-decoration: none;
+}
+
+.proyect a h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+
+    border: 2px solid #fff;
+
+    padding: 10px 0 10px 0;
+}
+
+.proyect a h4:hover {
+    background-color: #1e90ff;
+
+    border: 2px solid #1e90ff;
+}
+
+.proyects > p {
+    padding: 50px 0 0 0;
+
+    font-size: 18px;
+}
+
+.proyects p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.proyects p a:hover {
+    color: #fff;
+}
+
+/*---------------------------Contact-------------------------------------------------------------------*/
+.contact {
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+
+    padding: 50px 0 100px 0;
+}
+
+.contentContact {
+    width: 80%;
+    margin: auto;
+}
+
+.contact p {
+    font-size: 24px;
+}
+
+.contact h4 {
+    font-size: 48px;
+    background-color: #1e90ff;
+    color: #fff;
+
+    padding: 20px;
+    margin: 20px 0 20px 0;
+
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------Footer----------------------------------------------------------------------------------*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    padding: 30px 0 20px 0;
+}
+
+.footer .socialNetworks a {
+    font-size: 40px;
+    color: #fff;
+
+    padding: 0 20px 0 20px;
+}
+
+.copyright {
+    padding: 20px 0 0 0;
+}
