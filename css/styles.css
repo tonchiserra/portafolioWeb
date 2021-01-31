@@ -49,6 +49,7 @@ header {
     color: #ffffff;
        
     border: 2px solid #ffffff;
+    border-radius: 10px;
     
     padding: 10px 20px 10px 20px;
     margin-top: 50px;
@@ -73,13 +74,22 @@ header {
     position: absolute;
     bottom: 0;
     width: 100%;
-}  
+} 
 
 .navMain {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     font-weight: bold;
     background-color: #000;
+
+    animation: navMain 1.3s reverse;
+}
+
+@keyframes navMain {
+    0% {margin-left: 0;}
+    100% {margin-left: 0;}
+
+    100% {margin-left: -100%;}
 }
 
 .navMain ul {
@@ -91,23 +101,28 @@ header {
     margin: auto;
 }
 
-.navMain ul a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.navMain ul a li {
+.navMain ul li {
     list-style: none;
 
     padding: 15px 0 15px 0;
 }
 
-.navMain ul a li:hover {
-    background-color: #1e90ff;
+.navMain ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navMain ul li a:hover {
+    color: #1e90ff;
+}
+
+.navMain .socialNetworks {
+    text-align: right;
 }
 
 .navMain .socialNetworks a {
     font-size: 20px;
+    color: #fff;
 
     padding: 0 5px 0 5px;
 }
@@ -135,26 +150,31 @@ header {
 .aboutMe {
     padding: 50px 0 100px 0;
 
-    background-color: #dadada;
+    background-color: #c4c4c4;
 }
 
 .contentAboutMe { 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
 
     width: 80%;
     margin: auto;
-
-    background-color: #fff;
 }
 
 .contentAboutMe p {
     text-align: justify;
+    background-color: #fff;
+
+    border-radius: 10px 0 0 10px;
+
+    padding: 20px;
 }
 
 .profilePic {
-    margin-right: 0;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0 10px 10px 0;
 }
 
 /*-------------Technologies------------------------------------------------------------------------------*/
@@ -173,69 +193,45 @@ header {
     margin: auto;
 }
 
-.contentTechnologies div {
-    border: 2px solid #000;
+.contentTechnologies > div {
+    background-color: #c4c4c4;
 
-    padding: 0;
+    border-radius: 10px;
 }
 
-.progressHTML span{
+.contentTechnologies > div > span {
     display: inline-block;
     
-	padding: 10px;
+    height: 100%;
+    padding: 10px;
+    
+    border-radius: 10px;
+
+    background: #1e90ff;
+}
+
+.progressHTML span {
     width: 60%;
-    
-	background: #1e90ff;
 }
 
-.progressCSS span{
-    display: inline-block;
-    
-	height: 100%;
-	padding: 10px;
+.progressCSS span {
     width: 50%;
-    
-	background: #1e90ff;	
 }
 
-.progressJS span{
-    display: inline-block;
-    
-	height: 100%;
-	padding: 10px;
+.progressJS span {
     width: 25%;
-    
-	background: #1e90ff;	
 }
 
-.progressNode span{
-    display: inline-block;
-    
-	height: 100%;
-	padding: 10px;
+.progressNode span {
     width: 5%;
-    
-	background: #1e90ff;	
 }
 
-.progressElectron span{
-    display: inline-block;
-    
-	height: 100%;
-	padding: 10px;
-    width: 25%;
-    
-	background: #1e90ff;	
+.progressElectron span {
+    width: 25%;	
 }
 
-.progressGit span{
-    display: inline-block;
-    
-	height: 100%;
-	padding: 10px;
+.progressGit span {
     width: 30%;
-    
-	background: #1e90ff;	
 }
 
 .technologies p {
@@ -264,8 +260,6 @@ header {
 .areas {
     text-align: center;
 
-    border: 2px solid #000;
-
     padding: 20px 0 0 0;
     margin: auto;
     width: 100%;
@@ -278,8 +272,7 @@ header {
 .areas p {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
-    background-color: #000;
+    color: #000;
 
     padding: 10px 0 10px 0;
 }
@@ -308,14 +301,17 @@ header {
 }
 
 .proyect {
+    background-color: #fff;
 
+    border-radius: 10px;
+
+    padding: 10px;
 }
 
 .slider {
     overflow: hidden;
 
-    border: 2px solid #fff;
-    border-bottom: none;
+    border-radius: 10px;
 }
 
 .slider .proyectPics{
@@ -324,7 +320,7 @@ header {
     padding: 0;
     width: 300%;
 
-    animation: slide 9s infinite ;
+    animation: slide 9s infinite alternate;
 }
 
 @keyframes slide {
@@ -342,13 +338,15 @@ header {
     list-style: none;
 
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 .proyectPics li img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    color: #000;
 }
 
 .proyect a {
@@ -356,20 +354,26 @@ header {
 }
 
 .proyect a h4{
+    color: #000;
     font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #000;
+    background-color: #c4c4c4;
 
-    border: 2px solid #fff;
+    border-radius: 10px;
 
     padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 .proyect a h4:hover {
     background-color: #1e90ff;
+}
 
-    border: 2px solid #1e90ff;
+.proyect > p {
+    color: #000;
+    font-size: 18px;
+    text-align: justify;
+
+    padding: 0 10px 5px 10px;
 }
 
 .proyects > p {
@@ -406,10 +410,16 @@ header {
     font-size: 24px;
 }
 
+.contact p > span {
+    text-decoration: underline #1e90ff;
+}
+
 .contact h4 {
     font-size: 48px;
     background-color: #1e90ff;
     color: #fff;
+
+    border-radius: 10px;
 
     padding: 20px;
     margin: 20px 0 20px 0;
