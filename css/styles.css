@@ -11,7 +11,7 @@ body {
 /*--Header--*/
 header {
     color: #ffffff;
-    background-image: url(../imgs/homePic.png);
+    background: url(../imgs/homePic.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -76,22 +76,15 @@ header {
     width: 100%;
 } 
 
+.showNav,
 .navMain {
     text-align: left;
     font-size: 16px;
     font-weight: bold;
     background-color: #000;
-
-    animation: navMain 1.3s reverse;
 }
 
-@keyframes navMain {
-    0% {margin-left: 0;}
-    100% {margin-left: 0;}
-
-    100% {margin-left: -100%;}
-}
-
+.showNav ul,
 .navMain ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -101,25 +94,30 @@ header {
     margin: auto;
 }
 
+.showNav ul li,
 .navMain ul li {
     list-style: none;
 
     padding: 15px 0 15px 0;
 }
 
+.showNav ul li a,
 .navMain ul li a {
     text-decoration: none;
     color: #fff;
 }
 
+.showNav ul li a:hover,
 .navMain ul li a:hover {
     color: #1e90ff;
 }
 
+.showNav .socialNetworks,
 .navMain .socialNetworks {
     text-align: right;
 }
 
+.showNav .socialNetworks a,
 .navMain .socialNetworks a {
     font-size: 20px;
     color: #fff;
@@ -128,6 +126,45 @@ header {
 }
 
 .socialNetworks i:hover {
+    color: #1e90ff;
+}
+
+.stickyNavTwo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: #000;
+    font-size: 20px;
+
+    box-shadow: 0px 1px 6px #000;
+}
+
+.navTwo {
+    display: none;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: #000;
+    font-size: 20px;
+    color: #fff;
+}
+
+#iconMenu {
+    width: 80%;
+    margin: auto;
+    padding: 15px 0 15px 0;
+
+    text-align: right;
+}
+
+#iconMenu > i {
+    cursor: pointer;
+}
+
+#iconMenu i:hover {
     color: #1e90ff;
 }
 
@@ -342,8 +379,8 @@ header {
 }
 
 .proyectPics li img {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 
     color: #000;
@@ -427,15 +464,6 @@ header {
     display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
 /*------------------Footer----------------------------------------------------------------------------------*/
 .footer {
     background-color: #000;
@@ -454,4 +482,106 @@ header {
 
 .copyright {
     padding: 20px 0 0 0;
+}
+
+/*-------Responsive design----------------------------*/
+@media screen and (max-width: 900px) {
+
+    header{
+        background: #000;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .navMain ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .contentAboutMe {
+        grid-template-columns: 1fr;
+    }
+
+    .contentAboutMe p {
+        border-radius: 10px;
+    }
+    
+    .contentAboutMe .profilePic {
+        border-radius: 10px;
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .contentTechnologies {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contentAreasOfInterest {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contentProyects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contentContact h4 {
+        font-size: 36px;
+    }
+
+    .contentContact p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .navMain {
+        display: none;
+    }
+
+    .showNav {
+        display: block;
+
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+
+        box-shadow: none;
+
+        background-color: #fff;
+    }
+
+    .showNav ul {
+        grid-template-columns: 1fr;
+        
+        padding-top: 100px;
+        width: 70%;
+    }
+
+    .showNav ul li a {
+        color: #000;
+    }
+
+    .showNav ul .socialNetworks {
+        text-align: left;
+        color: #000;
+
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .showNav ul .socialNetworks a {
+        color: #000;
+    }
+
+    .navTwo {
+        display: block;
+    }
+
+    .closeMenu {
+        display: block;
+    }
 }

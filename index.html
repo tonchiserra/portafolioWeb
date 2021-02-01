@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Gonzalo Serra</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
@@ -12,31 +12,38 @@
 
 <body>
     <header>
-        <div class="home">
-            <p>¡Hola! Soy</p>
-            <h1>Gonzalo Serra</h1>
-            <h3>front-end developer</h3>
+        <div class="headerContent">
+            <div class="home">
+                <p>¡Hola! Soy</p>
+                <h1>Gonzalo Serra</h1>
+                <h3>front-end developer</h3>
 
-            <a class="contactButton" href="#contact">Contacto</a>
-         </div>
+                <a class="contactButton" href="#contact">Contacto</a>
+            </div>
 
-         <nav class="navMain" class="bottomNavMain" id="navMain">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#aboutMe">Sobre mi</a></li>
-                <li><a href="#proyects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-
-                <div></div>
-                <div></div>
-
-                <div class="socialNetworks">
-                    <a target="_blank" title="Instagram" href="https://www.instagram.com/tonchiserra"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" title="Twitter" href="https://twitter.com/tonchi_serra"><i class="fab fa-twitter"></i></a>
-                    <a target="_blank" title="GitHub" href="https://www.github.com/tonchiserra/"><i class="fab fa-github"></i></a>
+            <div class="navTwo" id="navTwo">
+                <div id="iconMenu" onclick="showMenu()">
+                    <i class="fas fa-bars"></i>
                 </div>
-            </ul>
-        </nav>
+            </div>
+            
+            <nav class="navMain" class="bottomNavMain" class="showNav" id="navMain">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#aboutMe">Sobre mi</a></li>
+                    <li><a href="#proyects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+
+                    <div class="space"></div>
+                    <div class="space"></div>
+
+                    <div class="socialNetworks">
+                        <a target="_blank" title="Instagram" href="https://www.instagram.com/tonchiserra"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" title="Twitter" href="https://twitter.com/tonchi_serra"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" title="GitHub" href="https://www.github.com/tonchiserra/"><i class="fab fa-github"></i></a>
+                    </div>
+                </ul>
+            </nav>
     </header>
 
     <div class="container">
@@ -110,9 +117,9 @@
                 <div class="proyect">
                     <div class="slider">
                         <ul class="proyectPics">
-                            <li><img src="" alt="Imagen no disponible"></li>
-                            <li><img src="" alt="Imagen no disponible"></li>
-                            <li><img src="" alt="Imagen no disponible"></li>
+                            <li><img src="imgs/homePic.png" alt="Imagen no disponible"></li>
+                            <li><img src="imgs/homePic.png" alt="Imagen no disponible"></li>
+                            <li><img src="imgs/homePic.png" alt="Imagen no disponible"></li>
                         </ul>
                     </div>
 
@@ -123,9 +130,9 @@
                 <div class="proyect">
                     <div class="slider">
                         <ul class="proyectPics">
-                            <li><img src="" alt="Imagen no disponible"></li>
-                            <li><img src="" alt="Imagen no disponible"></li>
-                            <li><img src="" alt="Imagen no disponible"></li>
+                            <li><img src="imgs/homePic.png" alt="Imagen no disponible"></li>
+                            <li><img src="imgs/homePic.png" alt="Imagen no disponible"></li>
+                            <li><img src="imgs/homePic.png" alt="Imagen no disponible"></li>
                         </ul>
                     </div>
 
