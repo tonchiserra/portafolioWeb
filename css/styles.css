@@ -15,14 +15,13 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-
     height: 100vh;
 }
 
 .home {
     width: 80%;
     margin: auto;
-    padding: 200px 0 200px 0;
+    padding: 230px 0 0 0;
 }
 
 .home p {
@@ -31,13 +30,11 @@ header {
 
 .home h1 {
     font-size: 60px;
-
     padding: 5px 0 5px 0;
 }
 
 .home h3 {
     font-size: 28px;
-
     padding-bottom: 30px;
 }
 
@@ -46,11 +43,9 @@ header {
     text-decoration: none;
     text-align: center;
     background-color: transparent;
-    color: #ffffff;
-       
+    color: #ffffff;  
     border: 2px solid #ffffff;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
     padding: 10px 20px 10px 20px;
     margin-top: 50px;
 }
@@ -58,113 +53,53 @@ header {
 .contactButton:hover {
     color: #ffffff;
     background-color: #1e90ff;
-
     border: 2px solid #1e90ff;
 }
 
-.stickyNavMain {
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    box-shadow: 0px 1px 6px #000;
-}
-
-.bottomNavMain {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-} 
-
-.showNav,
 .navMain {
     text-align: left;
     font-size: 16px;
     font-weight: bold;
     background-color: #000;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.showNav ul,
 .navMain ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-
     width: 80%;
     margin: auto;
 }
 
-.showNav ul li,
 .navMain ul li {
     list-style: none;
-
     padding: 15px 0 15px 0;
 }
 
-.showNav ul li a,
 .navMain ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-.showNav ul li a:hover,
 .navMain ul li a:hover {
     color: #1e90ff;
 }
 
-.showNav .socialNetworks,
 .navMain .socialNetworks {
     text-align: right;
 }
 
-.showNav .socialNetworks a,
 .navMain .socialNetworks a {
     font-size: 20px;
     color: #fff;
-
     padding: 0 5px 0 5px;
 }
 
 .socialNetworks i:hover {
-    color: #1e90ff;
-}
-
-.stickyNavTwo {
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    background-color: #000;
-    font-size: 20px;
-
-    box-shadow: 0px 1px 6px #000;
-}
-
-.navTwo {
-    display: none;
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
-
-    background-color: #000;
-    font-size: 20px;
-    color: #fff;
-}
-
-#iconMenu {
-    width: 80%;
-    margin: auto;
-    padding: 15px 0 15px 0;
-
-    text-align: right;
-}
-
-#iconMenu > i {
-    cursor: pointer;
-}
-
-#iconMenu i:hover {
     color: #1e90ff;
 }
 
@@ -178,7 +113,6 @@ header {
     color: #000;
     font-size: 64px;
     text-align: center;
-
     padding: 25px 0 25px 0;
     margin: 50px 0 50px 0;
 }
@@ -186,14 +120,12 @@ header {
 /*-------AboutMe--------------------------------------------------------------------------------------*/
 .aboutMe {
     padding: 50px 0 100px 0;
-
-    background-color: #c4c4c4;
+    background-color: #f5f5f5;
 }
 
 .contentAboutMe { 
     display: grid;
     grid-template-columns: 2fr 1fr;
-
     width: 80%;
     margin: auto;
 }
@@ -201,23 +133,21 @@ header {
 .contentAboutMe p {
     text-align: justify;
     background-color: #fff;
-
     border-radius: 10px 0 0 10px;
-
     padding: 20px;
+    box-shadow: 0 0 6px #adadad;
 }
 
 .profilePic {
     height: 100%;
     width: 100%;
-
     border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 6px #adadad;
 }
 
 /*-------------Technologies------------------------------------------------------------------------------*/
 .technologies {
     background-color: #fff;
-
     padding: 50px 0 100px 0;
 }
 
@@ -225,25 +155,20 @@ header {
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    
     width: 80%;
     margin: auto;
 }
 
 .contentTechnologies > div {
     background-color: #c4c4c4;
-
     border-radius: 10px;
 }
 
 .contentTechnologies > div > span {
     display: inline-block;
-    
     height: 100%;
     padding: 10px;
-    
     border-radius: 10px;
-
     background: #1e90ff;
 }
 
@@ -274,14 +199,12 @@ header {
 .technologies p {
     font-size: 18px;
     text-align: center;
-
     padding: 50px 0 0 0;
 }
 
 /*-------------AreasOfInterest------------------------------------------------------------------------------*/
 .areasOfInterest {
     background-color: #fff;
-
     padding: 50px 0 100px 0;
 }
 
@@ -289,14 +212,12 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-
     width: 80%;
     margin: auto;
 }
 
 .areas {
     text-align: center;
-
     padding: 20px 0 0 0;
     margin: auto;
     width: 100%;
@@ -310,113 +231,74 @@ header {
     font-size: 24px;
     font-weight: bold;
     color: #000;
-
     padding: 10px 0 10px 0;
 }
 
 
 /*-------------Proyects------------------------------------------------------------------------------*/
 .proyects {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-
+    background-color: #f5f5f5;
+    color: #000;
     padding: 50px 0 100px 0;
-}
-
-.proyects .title {
-    color: #ffffff;
 }
 
 .contentProyects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-
     width: 80%;
     margin: auto;
 }
 
 .proyect {
     background-color: #fff;
-
     border-radius: 10px;
-
-    padding: 10px;
+    box-shadow: 0 0 6px #adadad;
 }
 
-.slider {
-    overflow: hidden;
+.picProyect1 {
+    background: url(../imgs/homePic.png);
+}
 
+.picProyect2 {
+    background: url(../imgs/homePic.png);
+}
+
+.picProyect3 {
+    background: url(../imgs/homePic.png);
+}
+
+.picProyect1,
+.picProyect2,
+.picProyect3 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
     border-radius: 10px;
+    padding: 20px;
+    color: #fff;
 }
 
-.slider .proyectPics{
-    display: flex;
-
-    padding: 0;
-    width: 300%;
-
-    animation: slide 9s infinite alternate;
+.proyect h4 {
+    font-size: 28px;
+    font-weight: bolder;
 }
 
-@keyframes slide {
-    0% {margin-left: 0;}
-    30% {margin-left: 0;}
-
-    35% {margin-left: -100%;}
-    65% {margin-left: -100%;}
-
-    70% {margin-left: -200%;}
-    100% {margin-left: -200%;}
+.proyect p {
+    font-size: 16px;
+    padding: 10px 0 0 0;
 }
 
-.proyectPics li {
-    list-style: none;
-
-    width: 100%;
-    height: 250px;
-}
-
-.proyectPics li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    color: #000;
-}
-
-.proyect a {
-    text-decoration: none;
-}
-
-.proyect a h4{
-    color: #000;
-    font-size: 24px;
-    background-color: #c4c4c4;
-
-    border-radius: 10px;
-
-    padding: 10px 0 10px 0;
-    margin: 10px 0 10px 0;
-}
-
-.proyect a h4:hover {
-    background-color: #1e90ff;
-}
-
-.proyect > p {
-    color: #000;
-    font-size: 18px;
-    text-align: justify;
-
-    padding: 0 10px 5px 10px;
+.proyect .description {
+    padding: 10px 10px 10px 10px;
+    
 }
 
 .proyects > p {
     padding: 50px 0 0 0;
-
     font-size: 18px;
+    text-align: center;
 }
 
 .proyects p a {
@@ -426,7 +308,7 @@ header {
 }
 
 .proyects p a:hover {
-    color: #fff;
+    opacity: .6;
 }
 
 /*---------------------------Contact-------------------------------------------------------------------*/
@@ -434,7 +316,6 @@ header {
     background-color: #fff;
     text-align: center;
     color: #000;
-
     padding: 50px 0 100px 0;
 }
 
@@ -455,12 +336,9 @@ header {
     font-size: 48px;
     background-color: #1e90ff;
     color: #fff;
-
     border-radius: 10px;
-
     padding: 20px;
     margin: 20px 0 20px 0;
-
     display: inline-block;
 }
 
@@ -469,14 +347,12 @@ header {
     background-color: #000;
     color: #fff;
     text-align: center;
-
     padding: 30px 0 20px 0;
 }
 
 .footer .socialNetworks a {
     font-size: 40px;
     color: #fff;
-
     padding: 0 20px 0 20px;
 }
 
@@ -537,51 +413,4 @@ header {
 
 @media screen and (max-width: 700px) {
 
-    .navMain {
-        display: none;
-    }
-
-    .showNav {
-        display: block;
-
-        position: fixed;
-        width: 40%;
-        height: 100vh;
-
-        box-shadow: none;
-
-        background-color: #fff;
-    }
-
-    .showNav ul {
-        grid-template-columns: 1fr;
-        
-        padding-top: 100px;
-        width: 70%;
-    }
-
-    .showNav ul li a {
-        color: #000;
-    }
-
-    .showNav ul .socialNetworks {
-        text-align: left;
-        color: #000;
-
-        position: absolute;
-        bottom: 0;
-        padding-bottom: 10px;
-    }
-
-    .showNav ul .socialNetworks a {
-        color: #000;
-    }
-
-    .navTwo {
-        display: block;
-    }
-
-    .closeMenu {
-        display: block;
-    }
 }
