@@ -6,6 +6,9 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    overflow-x: hidden;
 }
 
 /*--Header--*/
@@ -21,7 +24,7 @@ header {
 .home {
     width: 80%;
     margin: auto;
-    padding: 230px 0 0 0;
+    padding: 200px 0 0 0;
 }
 
 .home p {
@@ -61,7 +64,7 @@ header {
     font-size: 16px;
     font-weight: bold;
     background-color: #000;
-
+    max-width: 1280px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -122,8 +125,7 @@ header {
 .navSecondary {
     background-color: #000;
     padding: 10px;
-
-    position:sticky;
+    position: fixed;
     top: 0;
     width: 100%;
 
@@ -138,6 +140,7 @@ header {
 }
 
 .showNav {
+    display: inline-block;
     color: #fff;
     font-size: 24px;
 }
@@ -304,10 +307,6 @@ header {
     text-decoration: none;
 }
 
-.proyect a:hover {
-    opacity: .8;
-}
-
 .picProyect1 {
     background: url(../imgs/homePic.png);
 }
@@ -472,6 +471,8 @@ header {
     .navMain {
         height: 100vh;
         width: 250px;
+        position: fixed;
+        left: 0;
         background-color: #fff;
         padding: 100px 0 0 10px;
         transform: translateX(-300px);
@@ -510,11 +511,86 @@ header {
         transform: translateX(0px);
     }
 
-    .container {
+    .containerAll {
         transition: all 300ms cubic-bezier(1,0,0,1);
     }
 
     .moveAll {
         transform: translateX(250px);
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .title {
+        font-size: 48px;
+    }
+
+    .contentTechnologies {
+        grid-template-columns: 1fr;
+    }
+
+    .areas p {
+        font-size: 20px;
+    }
+
+    .contentProyects {
+        grid-template-columns: 1fr;
+    }
+
+    .contentContact h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contentContact p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .home p {
+        font-size: 24px;
+    }
+
+    .home h1 {
+        font-size: 52px;
+    }
+
+    .home h3 {
+        font-size: 24px;
+    }
+
+    .contentAboutMe > p {
+        font-size: 16px;
+    }
+
+    .proyects > p,
+    .technologies > p {
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .contentAreasOfInterest {
+        grid-template-columns: 1fr;
+    }
+
+    .contentContact p {
+        font-size: 16px;
+    }
+
+    .contentContact h4 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .footer > .socialNetworks a {
+        font-size: 32px;
+    }
+
+    .copyright p {
+        font-size: 16px;
     }
 }
