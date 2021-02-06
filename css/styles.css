@@ -297,6 +297,9 @@ header {
 .proyect {
     background-color: #fff;
     border-radius: 10px;
+}
+
+.proyect:hover {
     box-shadow: 0 0 6px #adadad;
 }
 
@@ -305,15 +308,15 @@ header {
 }
 
 .picProyect1 {
-    background: url(../imgs/homePic.png);
+    background: url(../imgs/priceList.png);
 }
 
 .picProyect2 {
-    background: url(../imgs/homePic.png);
+    background: #000;
 }
 
 .picProyect3 {
-    background: url(../imgs/homePic.png);
+    background: #000;
 }
 
 .picProyect1,
@@ -340,7 +343,6 @@ header {
 
 .proyect .description {
     padding: 10px 10px 10px 10px;
-    
 }
 
 .proyects > p {
