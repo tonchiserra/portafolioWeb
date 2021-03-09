@@ -1,181 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gonzalo Serra</title>
     <!--Favicon-->
-    <link rel= "icon" href="imgs/favicon.ico">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel= "icon" href="assets/favicon.ico">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!--FontAwesome-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">  
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
+    
+    <header class="header">
 
-        <nav class="navSecondary">
-            <ul>
-                <div class="showNav" id="showNav" onclick="slideMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </ul>
-        </nav>
+        <section class="container">
 
-        <nav class="navMain" id="navMain">
-
-            <div class="closeNav" id="closeNav" onclick="slideMenu()">
-                <i class="fas fa-times"></i>
+            <div class="logo">
+                <a href="index.html">GS</a>
             </div>
-            
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
 
-                <div class="space"></div>
-                <div class="space"></div>
+            <button class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+            </button>
 
-                <div class="socialNetworks">
-                    <a target="_blank" title="Instagram" href="https://www.instagram.com/tonchiserra"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" title="Twitter" href="https://twitter.com/tonchi_serra"><i class="fab fa-twitter"></i></a>
-                    <a target="_blank" title="GitHub" href="https://www.github.com/tonchiserra/"><i class="fab fa-github"></i></a>
-                </div>
-
-            </ul>
-        </nav>
-
-        <div class="headerContent">
-            <div class="home">
-                <p>¡Hola! Soy</p>
-                <h1>Gonzalo Serra</h1>
-                <h3>front-end developer</h3>
-
-                <a class="contactButton" href="#contact">Contacto</a>
-            </div>
-        </div>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#acerca">Acerca</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </section>
     </header>
 
-    <div class="containerAll" id="containerAll">
 
-        <div class="container" id="container">
+    <section id="inicio" class="home">
 
-            <div class="aboutMe" id="aboutMe">
-                <h2 class="title">¿Quién soy?</h2>
-                <div class="contentAboutMe">
-                    <p>Mi nombre es <span>Gonzalo Serra</span> pero todos me dicen <span>Tonchi</span>. Tengo 19 años y    soy oriundo de la ciudad de Totoras, Santa Fe, Argentina. En 2019 comencé a estudiar Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional FRRo y de forma autodidacta me dedico a aprender y mejorar mis habilidades como <span>front-end developer</span>.
-                        <br>En septiembre de 2018 realizando las pasantías laborales de mi último año de secundaria es cuando me comenzó a interesar el desarrollo web. Fue así como en 2020, en medio de la cuarentena, decidí meterme de lleno a aprender tecnologías web, aunque sin dejar de lado mis estudios de la universidad.
-                        <br><br>Te invito a que sigas bajando para conocer más sobre mi.
-                    </p>
-                    <img class="profilePic" src="imgs/profile.jpg" alt="Imagen no disponible">
+        <article class="hero-image" style="--hero-image: url(assets/hero-image-home.png);">
+            <aside class="hero-image-opacity">
+                <div class="hero-image-content">
+                    <h1 class="hero-image-title">
+                        Gonzalo Serra
+                    </h1>
+                    <h2 class="hero-image-subtitle">
+                        Frontend developer
+                    </h2>
+                    <a href="#contacto" class="btn">Contáctame</a>
                 </div>
-            </div>
+            </aside>
+        </article>
+    </section>
 
-            <div class="technologies">
-                <h2 class="title">Tecnologías que aplico</h2>
-                
-                <div class="contentTechnologies">
-                    <div class="progressHTML"><span><strong>HTML</strong></span></div>
-                    <div class="progressCSS"><span><strong>CSS</strong></span></div>
-                    <div class="progressJS"><span><strong>JavaScript</strong></span></div>
-                    <div class="progressNode"><span><strong>NodeJS</strong></span></div>
-                    <div class="progressElectron"><span><strong>Electron</strong></span></div>
-                    <div class="progressGit"><span><strong>Git</strong></span></div>
-                </div>
 
-                <p>En un futuro me gustaría aprender <strong>React.js</strong> y <strong>Sass</strong>.</p>
-            </div>
-                
-            <div class="areasOfInterest">
-                <h2 class="title">Areas de interés</h2>
+    <section id="acerca" class="about">
 
-                <div class="contentAreasOfInterest">
-                    <div class="areas">
-                        <img src="imgs/webDevelopment.png" alt="Desarrollo web">
-                        <p>Desarrollo web</p>
-                    </div>
+        <h3 class="title">¿Quién soy?</h3>
 
-                    <div class="areas">
-                        <img src="imgs/systemAnalysis.png" alt="Análisis de sistemas">
-                        <p>Análisis de sistemas</p>
-                    </div>
+        <div class="about-content box-shadow-1">
+        
+            <p class="text">Mi nombre es Gonzalo Serra pero todos me dicen Tonchi. Tengo 19 años y soy oriundo de la ciudad de Totoras, Santa Fe, Argentina. En 2019 comencé a estudiar Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional FRRo y de forma autodidacta me dedico a aprender y mejorar mis habilidades como front-end developer. <br><br>
+            En septiembre de 2018 realizando las pasantías laborales de mi último año de secundaria es cuando me comenzó a interesar el desarrollo web. Fue así como en 2020, en medio de la cuarentena, decidí meterme de lleno a aprender tecnologías web, aunque sin dejar de lado mis estudios de la universidad. <br> <br>
 
-                    <div class="areas">
-                        <img src="imgs/programming.png" alt="Programación">
-                        <p>Programación</p>
-                    </div>
-                </div>
-            </div>
+            Te invito a que sigas conociendo más sobre mi.</p>
 
-            <div class="proyects" id="proyects">
-                <h2 class="title">Proyectos</h2>
+            <img class="about-image" src="assets/profile-image.jpg">
+        </div>
+    </section>
 
-                <div class="contentProyects">
+    <section class="skills">
 
-                    <div class="proyect">
-                        <a target="_blank" title="Lista de precios" href="https://github.com/tonchiserra/price-list">
-                            <div class="picProyect1">
-                                <h4>Lista de precios</h4>
-                                <p>ElectronJS</p>
-                            </div>
-                        </a>
-                        <p class="description">¿Necesitas listar los precios de tus productos? Esta aplicación desarrollada en ElectronJS te permite listar, modificar y eliminar tus productos con su respectivo precio y descripción.</p>
-                    </div>
+        <h3 class="title">Tecnologías que aplico</h3>
 
-                    <div class="proyect">
-                        <a target="_blank" title="" href="">
-                            <div class="picProyect2">
-                                <h4>Proyecto 2</h4>
-                                <p>No disponible</p>
-                            </div>
-                        </a>
-                        <p class="description"></p>
-                    </div>
-
-                    <div class="proyect">
-                        <a target="_blank" title="" href="">
-                            <div class="picProyect3">
-                                <h4>Proyecto 3</h4>
-                                <p>No disponible</p>
-                            </div>
-                        </a>
-                        <p class="description"></p>
-                    </div>
-
-                    
-                </div>
-
-                <p>Podes ver todos mis repositorios en mi perfil de <a target="_blank" title="GitHub" href="https://www.github.com/tonchiserra/">GitHub</a>.</p>
-            </div>
-
-            <div class="contact" id="contact">
-                <h2 class="title">Contacto</h2>
-
-                <div class="contentContact">
-                    <p>Podes contactarme enviando un mail a:</p>
-                    <h4><span>serragonzalo1@gmail.com</span></h4>
-                    <p>O a través de mis redes sociales. <span>¡Espero tu mensaje!</span></p>
-                </div>
-            </div>
+        <div class="skills-content">
+            <div class="progressHTML"><span><strong>HTML</strong></span></div>
+            <div class="progressCSS"><span><strong>CSS</strong></span></div>
+            <div class="progressJS"><span><strong>JavaScript</strong></span></div>
+            <div class="progressNode"><span><strong>NodeJS</strong></span></div>
+            <div class="progressElectron"><span><strong>Electron</strong></span></div>
+            <div class="progressGit"><span><strong>Git</strong></span></div>
         </div>
 
-        <div class="footer">
-            <div class="socialNetworks">
-                <a target="_blank" title="Instagram" href="https://www.instagram.com/tonchiserra"><i class="fab fa-instagram"></i></a>
-                <a target="_blank" title="Twitter" href="https://twitter.com/tonchi_serra"><i class="fab fa-twitter"></i></a>
-                <a target="_blank" title="GitHub" href="https://github.com/tonchiserra"><i class="fab fa-github"></i></a>
-            </div>
+        <p>En un futuro me gustaría aprender <strong>React.js</strong> y <strong>Sass</strong>.</p>
+    </section>
 
-            <div class="copyright">
-                <p>
-                    &copy; 2021 Gonzalo Serra. Todos los derechos reservados.
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <script src="js/script.js"></script>
+    <section id="proyectos" class="proyects">
+        <h2>Proyectos</h2>
+    </section>
+
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+    </section>
+
+
+    <footer class="footer">
+        <section class="footer-social-networks">
+            <a href="https://www.twitter.com/tonchi_serra" target="_blank" title="Twitter" rel="noopener"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/tonchiserra" target="_blank" title="Instagram" rel="noopener"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener"><i class="fab fa-github-square"></i></a>
+        </section>
+
+        <section class="footer-copyright">
+            &copy; Copyright 2021 - Web desarrollada por <a href="https://www.instagram.com/tonchiserra" target="_blank" rel="noopener">Gonzalo Serra</a>.
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
