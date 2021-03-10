@@ -17,7 +17,6 @@
 <body>
     
     <header class="header">
-
         <section class="container">
 
             <div class="logo">
@@ -32,6 +31,7 @@
             <nav class="menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#acerca">Acerca</a>
+                <a href="#habilidades">Habilidades</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#contacto">Contacto</a>
             </nav>
@@ -40,16 +40,15 @@
 
 
     <section id="inicio" class="home">
-
         <article class="hero-image" style="--hero-image: url(assets/hero-image-home.png);">
-            <aside class="hero-image-opacity">
+            <aside>
                 <div class="hero-image-content">
                     <h1 class="hero-image-title">
                         Gonzalo Serra
                     </h1>
                     <h2 class="hero-image-subtitle">
                         Frontend developer
-                    </h2>
+                    </h2>                
                     <a href="#contacto" class="btn">Contáctame</a>
                 </div>
             </aside>
@@ -57,45 +56,117 @@
     </section>
 
 
-    <section id="acerca" class="about">
-
+    <section id="acerca" class="about container">
         <h3 class="title">¿Quién soy?</h3>
-
-        <div class="about-content box-shadow-1">
-        
-            <p class="text">Mi nombre es Gonzalo Serra pero todos me dicen Tonchi. Tengo 19 años y soy oriundo de la ciudad de Totoras, Santa Fe, Argentina. En 2019 comencé a estudiar Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional FRRo y de forma autodidacta me dedico a aprender y mejorar mis habilidades como front-end developer. <br><br>
-            En septiembre de 2018 realizando las pasantías laborales de mi último año de secundaria es cuando me comenzó a interesar el desarrollo web. Fue así como en 2020, en medio de la cuarentena, decidí meterme de lleno a aprender tecnologías web, aunque sin dejar de lado mis estudios de la universidad. <br> <br>
-
-            Te invito a que sigas conociendo más sobre mi.</p>
-
-            <img class="about-image" src="assets/profile-image.jpg">
+        <div class="about-content">    
+            <p class="text">
+                Mi nombre es Gonzalo Serra pero todos me dicen Tonchi. Tengo 19 años y soy oriundo de la ciudad de Totoras, Santa Fe, Argentina. En 2019 comencé a estudiar Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional FRRo y de forma autodidacta me dedico a aprender y mejorar mis habilidades como front-end developer. <br><br>
+                En septiembre de 2018 realizando las pasantías laborales de mi último año de secundaria es cuando me comenzó a interesar el desarrollo web. Fue así como en 2020, en medio de la cuarentena, decidí meterme de lleno a aprender tecnologías web, aunque sin dejar de lado mis estudios de la universidad. <br> <br>
+                Te invito a que sigas conociendo más sobre mi.
+            </p>
+            <img class="about-image" src="assets/profile-image.jpg" alt="Gonzalo Serra">
         </div>
     </section>
 
-    <section class="skills">
 
+    <section id="habilidades" class="skills container">
         <h3 class="title">Tecnologías que aplico</h3>
-
         <div class="skills-content">
             <div class="progressHTML"><span><strong>HTML</strong></span></div>
             <div class="progressCSS"><span><strong>CSS</strong></span></div>
-            <div class="progressJS"><span><strong>JavaScript</strong></span></div>
-            <div class="progressNode"><span><strong>NodeJS</strong></span></div>
             <div class="progressElectron"><span><strong>Electron</strong></span></div>
+            <div class="progressJS"><span><strong>JavaScript</strong></span></div>
             <div class="progressGit"><span><strong>Git</strong></span></div>
+            <div class="progressNode"><span><strong>NodeJS</strong></span></div>
         </div>
-
         <p>En un futuro me gustaría aprender <strong>React.js</strong> y <strong>Sass</strong>.</p>
     </section>
 
 
-    <section id="proyectos" class="proyects">
-        <h2>Proyectos</h2>
+    <section id="proyectos" class="proyects container">
+        <h3 class="title">Mis proyectos realizados</h3>
+
+        <div class="proyects-content">
+
+            <article class="proyect">
+                <img src="assets/hero-image-home.png" alt="Price-list image" class="proyect-image">
+                <div class="proyect-description">
+                    <h4 class="proyect-title">Price-list</h4>
+                    <p class="text">Lista de precios creada en Electron JS. Esta aplicación te permite listar productos con su precio y descripción, además de editar o eliminar el producto.</p>
+                </div>
+                <div class="proyect-technologies">
+                    <i class="fas fa-atom"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-node-js"></i>
+                </div>
+            </article>
+
+            <article class="proyect">
+                <img src="" alt="" class="proyect-image">
+                <div class="proyect-description">
+                    <h4 class="proyect-title"></h4>
+                    <p class="text"></p>
+                </div>
+                <div class="proyect-technologies">
+
+                </div>
+            </article>
+
+            <article class="proyect">
+                <img src="" alt="" class="proyect-image">
+                <div class="proyect-description">
+                    <h4 class="proyect-title"></h4>
+                    <p class="text"></p>
+                </div>
+                <div class="proyect-technologies">
+
+                </div>
+            </article>
+
+            <article class="proyect">
+                <img src="" alt="" class="proyect-image">
+                <div class="proyect-description">
+                    <h4 class="proyect-title"></h4>
+                    <p class="text"></p>
+                </div>
+                <div class="proyect-technologies">
+
+                </div>
+            </article>
+        </div>
     </section>
 
+    <section id="contacto" class="contact container">
+        <h3 class="title">Contacto</h3>
 
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
+        <div class="contact-content">
+            <p class="text">
+                Puedes contactarme enviando un mail <br>
+                o a través de mis redes sociales. <br>
+                <u>¡Espero tu mensaje!</u>
+            </p>
+
+            <form action="" class="contact-form">
+                <input class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" title="Nombre no valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <input class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" title="E-mail no valido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <textarea name="message" placeholder="Ingresa tu mensaje" required></textarea>
+                <div class="contact-form-loader">
+                    <i class="fas fa-hourglass-half"></i>
+                </div>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+
+            <article id="gracias" class="modal">
+                <div class="modal-content">
+                    <article class="contact-form-response">
+                        <h3 class="title">¡Gracias!<br>Recibí tu mensaje</h3>
+                        <i class="far fa-check-circle"></i>
+                    </article>
+                </div>
+            </article>
+        </div>
     </section>
 
 

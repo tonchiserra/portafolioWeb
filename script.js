@@ -1,4 +1,4 @@
-//menu
+/* ------ Menu ------ */
 ((d) => {
     const $btnMenu = d.querySelector(".menu-btn")
     const $menu = d.querySelector(".menu")
