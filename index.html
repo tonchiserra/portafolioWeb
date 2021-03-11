@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gonzalo Serra</title>
-    <!--Favicon-->
-    <link rel= "icon" href="assets/favicon.ico">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -13,6 +11,18 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">  
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--Metatags para SEO y Socialmedia-->
+    <meta name="description" content="Frontend Developer y eterno autodidacta | Este es mi Portafolio Web.">
+    <link rel="canonical" href="ruta/absoluta">
+    <link rel= "icon" href="ruta-absoluta/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="ruta-absoluta/assets/favicon.ico">
+    <meta name="theme-color" content="#1e90ff">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" property="og:title" content="Gonzalo Serra">
+    <meta name="twitter:image" property="og:image" content="ruta-absoluta/assets/hero-image-home.png">
+    <meta name="twitter:url" property="og:url" content="ruta/ruta-absoluta">
+    <meta name="twitter:description" property="og:description" content="Frontend Developer y eterno autodidacta | Este es mi Portafolio Web.">
 </head>
 <body>
     
@@ -24,8 +34,8 @@
             </div>
 
             <button class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
-                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times none"></i>
             </button>
 
             <nav class="menu">
@@ -89,9 +99,9 @@
         <div class="proyects-content">
 
             <article class="proyect">
-                <img src="assets/hero-image-home.png" alt="Price-list image" class="proyect-image">
+                <a href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener"><img src="assets/price-list-image.png" alt="Price-list image" class="proyect-image"></a>
                 <div class="proyect-description">
-                    <h4 class="proyect-title">Price-list</h4>
+                    <h4 class="proyect-title"><a href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener">Price-list</a></h4>
                     <p class="text">Lista de precios creada en Electron JS. Esta aplicación te permite listar productos con su precio y descripción, además de editar o eliminar el producto.</p>
                 </div>
                 <div class="proyect-technologies">
@@ -149,21 +159,25 @@
             </p>
 
             <form action="" class="contact-form">
-                <input class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" title="Nombre no valido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                <input class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" title="E-mail no valido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <input class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                
                 <textarea name="message" placeholder="Ingresa tu mensaje" required></textarea>
-                <div class="contact-form-loader">
-                    <i class="fas fa-hourglass-half"></i>
-                </div>
-                <input class="btn" type="submit" value="Enviar">
+                
+                <input class="btn" type="submit" value="Enviar" onclick="sendMail()">
             </form>
 
-            <article id="gracias" class="modal">
+            <article class="modal modal-none">
                 <div class="modal-content">
-                    <article class="contact-form-response">
+                    <div class="modal-contact-response">
                         <h3 class="title">¡Gracias!<br>Recibí tu mensaje</h3>
                         <i class="far fa-check-circle"></i>
-                    </article>
+                    </div>
+                   
+                    <div class="contact-loader modal-none">
+                        <h3 class="title">Enviando...</h3>
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
                 </div>
             </article>
         </div>
