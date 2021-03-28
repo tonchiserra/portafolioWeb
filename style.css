@@ -7,7 +7,7 @@
     --third-color: #002897;
     --third-alpha-color: rgba(0, 40, 151, 0.75);
     --white-color: #fff;
-    --gray-color: #c2c2c2;
+    --gray-color: #e6e6e6;
     --black-color: #000;
     --link-color: #fff;
     --title-color: #333;
@@ -292,7 +292,7 @@ p {
 }
 
 .progressCSS span {
-    width: 50%;
+    width: 70%;
 }
 
 .progressJS span {
@@ -362,7 +362,7 @@ p {
 
 .proyect-technologies {
     padding: 0.5rem 1rem;
-    background-color: #e6e6e6;
+    background-color: var(--gray-color);
     border-radius: 0 0 10px 10px;
     position: absolute;
     bottom: 0;
@@ -472,6 +472,35 @@ p {
     font-size: 9.5vw;
     color: var(--first-color);
     padding: 2rem 4rem;
+
+    -webkit-animation: loader 1.3s linear infinite;
+    animation: loader 1.3s linear infinite;
+    animation-name: loader;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 
