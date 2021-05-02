@@ -288,7 +288,7 @@ p {
 }
 
 .progressHTML span {
-    width: 70%;
+    width: 80%;
 }
 
 .progressCSS span {
@@ -296,11 +296,11 @@ p {
 }
 
 .progressJS span {
-    width: 30%;
+    width: 40%;
 }
 
-.progressNode span {
-    width: 5%;
+.progressReact span {
+    width: 10%;
 }
 
 .progressElectron span {
@@ -316,6 +316,24 @@ p {
     margin: 2rem;
 }
 
+.skills-content2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: left;
+}
+
+.skills-content2-l {
+
+}
+
+.skills-content2-r {
+
+}
+
+.skills-content2 h4 {
+    text-align: center;
+}
 
 /*-- Proyectos --*/
 .proyects {
@@ -561,6 +579,10 @@ p {
     }
 
     .skills-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-content2 {
         grid-template-columns: 1fr 1fr;
     }
 
