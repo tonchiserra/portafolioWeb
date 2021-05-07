@@ -1,19 +1,14 @@
 /*-- Custom Properties -------------------------------------------------------------------*/
 :root {
     --first-color: #1e90ff;
-    --first-alpha-color: rgba(30, 144, 255, 0.75);
     --second-color: #191f25;
-    --second-alpha-color: rgba(25, 31, 37, 0.75);
     --third-color: #002897;
-    --third-alpha-color: rgba(0, 40, 151, 0.75);
     --white-color: #fff;
     --gray-color: #e6e6e6;
     --black-color: #000;
     --link-color: #fff;
     --title-color: #333;
     --text-color: #222;
-    --white-alpha-color: rgba(255, 255, 255, 0.5);
-    --black-alpha-color: rgba(0, 0, 0, 0.5);
     --font: "Raleway", sans-serif;
     --max-width: 1200px;
     --header-height: 4rem;
@@ -322,7 +317,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .skills-content2-l {
@@ -333,8 +328,8 @@ p {
 
 }
 
-.skills-content2 h4 {
-    text-align: center;
+.skills-content2 li {
+    list-style: none;
 }
 
 /*-- Proyectos --*/
@@ -452,10 +447,6 @@ p {
     resize: none;
 }
 
-.required {
-    box-shadow: 0rem 0rem .5rem rgb(255, 0, 0);
-}
-
 .contact-form .btn {
     border: none;
     cursor: pointer;
@@ -492,6 +483,7 @@ p {
 
 .modal-content .title {
     margin: 0;
+    color: var(--title-color);
 }
 
 .modal-content i {
@@ -542,7 +534,7 @@ p {
 
 /*-- Footer --*/
 .footer {
-    background-color: var(--second-color);
+    background-color: var(--black-color);
     color: var(--white-color);
     text-align: center;
     padding: 1rem;
