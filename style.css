@@ -438,6 +438,10 @@ p {
     resize: none;
 }
 
+.required {
+    box-shadow: 0rem 0rem .5rem rgb(255, 0, 0);
+}
+
 .contact-form .btn {
     border: none;
     cursor: pointer;
