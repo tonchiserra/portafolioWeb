@@ -375,6 +375,11 @@ p {
     margin-bottom: 0;
 }
 
+.proyect-description .text a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
 .proyect-technologies {
     padding: 0.5rem 1rem;
     background-color: var(--gray-color);
