@@ -258,6 +258,18 @@ p {
     border: 4px solid var(--title-color);
 }
 
+.about-content .cv-btn {
+    border-radius: 10px;
+    padding: 1rem;
+    display: block;
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
+
 
 /*-- Skills --*/
 .skills {
@@ -293,19 +305,19 @@ p {
 }
 
 .progressJS span {
-    width: 40%;
+    width: 45%;
 }
 
 .progressReact span {
-    width: 10%;
+    width: 20%;
 }
 
 .progressElectron span {
-    width: 40%;	
+    width: 25%;	
 }
 
 .progressGit span {
-    width: 30%;
+    width: 35%;
 }
 
 .skills p {
@@ -326,6 +338,10 @@ p {
 
 .skills-content2-r {
 
+}
+
+.skills-content2 ul {
+    padding: 0;
 }
 
 .skills-content2 li {
@@ -595,6 +611,10 @@ p {
 
     .about-image {
         width: 30%;
+    }
+
+    .about-content .cv-btn {
+        display: inline-block;
     }
 
     .skills-content {
