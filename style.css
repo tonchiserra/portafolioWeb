@@ -312,8 +312,8 @@ p {
     width: 20%;
 }
 
-.progressElectron span {
-    width: 25%;	
+.progressMySQL span {
+    width: 20%;	
 }
 
 .progressGit span {
@@ -410,12 +410,24 @@ p {
     font-size: 1.2rem;
 }
 
+.proyects > p > a {
+    color: #1e90ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.proyects > p {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
 
 /*-- Contacto --*/
 .contact {
     padding: 1rem;
     text-align: center;
-    background: url(./assets/background-contact.png);
+    background: url(./assets/background-contact.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -473,6 +485,7 @@ p {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     outline: none;
+    font-size: 1rem;
 }
 
 .contact-form .btn:hover {

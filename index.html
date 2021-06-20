@@ -12,7 +12,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Metatags para SEO y Socialmedia-->
-    <meta name="description" content="Frontend Developer y eterno autodidacta | Portafolio Web.">
+    <meta name="description" content="Frontend Developer y eterno autodidacta | Este es mi Portafolio Web.">
     <link rel="canonical" href="https://gserra.netlify.app">
     <link rel= "icon" href="https://gserra.netlify.app/assets/favicon.ico">
     <link rel="apple-touch-icon" href="https://gserra.netlify.app/assets/favicon.ico">
@@ -30,20 +30,20 @@
         <section class="container">
 
             <div class="logo">
-                <a href="index.html">GS</a>
+                <a href="./index.html" title="Inicio">GS</a>
             </div>
 
-            <button class="menu-btn">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times none"></i>
+            <button class="menu-btn" title="Menu">
+                <i class="fas fa-bars" title="Menu"></i>
+                <i class="fas fa-times none" title="Cerrar"></i>
             </button>
 
             <nav class="menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#acerca">Acerca</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#inicio" title="Inicio">Inicio</a>
+                <a href="#acerca" title="Acerca">Acerca</a>
+                <a href="#habilidades" title="Habilidades">Habilidades</a>
+                <a href="#proyectos" title="Proyectos">Proyectos</a>
+                <a href="#contacto" title="Contacto">Contacto</a>
             </nav>
         </section>
     </header>
@@ -59,7 +59,7 @@
                     <h2 class="hero-image-subtitle">
                         Frontend developer
                     </h2>                
-                    <a href="#contacto" class="btn">Contáctame</a>
+                    <a href="#contacto" title="Contáctame" class="btn">Contáctame</a>
                 </div>
             </aside>
         </article>
@@ -74,9 +74,9 @@
                 <br><br>
                 Te invito a que sigas conociendo más sobre mi.
                 <br><br><br>
-                <a href="./assets/cv.pdf" class="cv-btn">Descarga mi CV</a>
+                <a href="./assets/cv.pdf" rel="noopener" target="_blank" title="Descarga mi CV" class="cv-btn">Descarga mi CV</a>
             </p>
-            <img class="about-image" src="assets/profile-image.jpg" alt="Gonzalo Serra">
+            <img class="about-image" src="assets/profile-image.jpg" title="Foto de Gonzalo Serra" alt="Gonzalo Serra">
         </div>
     </section>
 
@@ -84,12 +84,12 @@
     <section id="habilidades" class="skills container">
         <h3 class="title">Tecnologías que aplico</h3>
         <div class="skills-content">
-            <div class="progressHTML"><span><strong>HTML</strong></span></div>
-            <div class="progressCSS"><span><strong>CSS</strong></span></div>
-            <div class="progressJS"><span><strong>JavaScript</strong></span></div>
-            <div class="progressGit"><span><strong>Git</strong></span></div>
-            <div class="progressElectron"><span><strong>Electron</strong></span></div>
-            <div class="progressReact"><span><strong>ReactJS</strong></span></div>
+            <div title="HTML" class="progressHTML"><span><strong>HTML</strong></span></div>
+            <div title="CSS" class="progressCSS"><span><strong>CSS</strong></span></div>
+            <div title="JavaScript" class="progressJS"><span><strong>JavaScript</strong></span></div>
+            <div title="Git" class="progressGit"><span><strong>Git</strong></span></div>
+            <div title="ReactJS" class="progressReact"><span><strong>ReactJS</strong></span></div>
+            <div title="MySQL" class="progressMySQL"><span><strong>MySQL</strong></span></div>
         </div>
         <p>En un futuro me gustaría aprender <strong>Node.js</strong> y <strong>Sass</strong>.</p>
 
@@ -109,7 +109,7 @@
                 <ul>
                     <li>IBM Rational SM</li>
                     <li>Linux básico</li>
-                    <li>C</li>
+                    <li>ElectronJS</li>
                     <li>Máquinas virtuales</li>
                     <li>Pascal</li>
                 </ul>
@@ -124,11 +124,11 @@
 
         <div class="proyects-content">
 
-            <article class="proyect">
-                <a href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener"><img src="assets/todolist-image.png" alt="ToDoList image" class="proyect-image"></a>
+            <article class="proyect" title="Proyecto 'ToDoList'">
+                <a title="Imagen de 'ToDoList'" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener"><img src="assets/todolist-image.png" title="Imagen de 'ToDoList'" alt="ToDoList image" class="proyect-image"></a>
                 <div class="proyect-description">
-                    <h4 class="proyect-title"><a href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener">ToDoList</a></h4>
-                    <p class="text">App Web de lista de tareas, creada utilizando create-react-app. Las tareas realizadas y a realizar se almacenan en el LocalStorage. <a href="https://todolist-gserra.netlify.app/" target="_blank" rel="noopener">Probar ahora</a>.</p>
+                    <h4 title="ToDoList" class="proyect-title"><a title="ToDoList" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener">ToDoList</a></h4>
+                    <p class="text">App Web de lista de tareas, creada utilizando create-react-app. Las tareas realizadas y a realizar se almacenan en el LocalStorage. <a title="Probar proyecto 'ToDoList'" href="https://todolist-gserra.netlify.app/" target="_blank" rel="noopener">Probar ahora</a>.</p>
                 </div>
                 <div class="proyect-technologies">
                     <i class="fab fa-react"></i>
@@ -138,28 +138,14 @@
                 </div>
             </article>
 
-            <article class="proyect">
-                <a href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener"><img src="assets/price-list-image.png" alt="Price-list image" class="proyect-image"></a>
+            <article class="proyect" title="Proyecto 'Price-list'">
+                <a title="Imagen de 'Price-list'" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener"><img src="assets/price-list-image.png" title="Imagen de 'Price-list'" alt="Price-list image" class="proyect-image"></a>
                 <div class="proyect-description">
-                    <h4 class="proyect-title"><a href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener">Price-list</a></h4>
+                    <h4 title="Price-list" class="proyect-title"><a title="Price-list" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener">Price-list</a></h4>
                     <p class="text">Lista de precios creada en Electron JS. Esta aplicación te permite listar productos con su precio y descripción, además de editar o eliminar el producto.</p>
                 </div>
                 <div class="proyect-technologies">
                     <i class="fas fa-atom"></i>
-                    <i class="fab fa-node-js"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                </div>
-            </article>
-
-            <article class="proyect">
-                <a href="https://github.com/tonchiserra/EstuLlevo" target="_blank" rel="noopener"><img src="assets/estullevo-image.png" alt="EstuLlevo image" class="proyect-image"></a>
-                <div class="proyect-description">
-                    <h4 class="proyect-title"><a href="https://github.com/tonchiserra/EstuLlevo" target="_blank" rel="noopener">EstuLlevo</a></h4>
-                    <p class="text">Aplicación web para los estudiantes de cualquier carrera. Ingresando tres condiciones esta app calcula cuanto porcentaje llevas de carrera completa.</p>
-                </div>
-                <div class="proyect-technologies">
                     <i class="fab fa-js"></i>
                     <i class="fab fa-css3-alt"></i>
                     <i class="fab fa-html5"></i>
@@ -176,7 +162,20 @@
 
                 </div>
             </article>
+
+            <article class="proyect">
+                <img src="" alt="" class="proyect-image">
+                <div class="proyect-description">
+                    <h4 class="proyect-title"></h4>
+                    <p class="text"></p>
+                </div>
+                <div class="proyect-technologies">
+
+                </div>
+            </article>
         </div>
+
+        <p>Puedes ver todos mis proyectos en mi perfil de <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener">GitHub</a>.</p>
     </section>
 
     <section id="contacto" class="contact">
@@ -190,12 +189,12 @@
             </p>
 
             <form action="https://formsubmit.co/ajax/serragonzalo1@gmail.com" class="contact-form">
-                <input class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                <input class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input title="Ingresa tu nombre" class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <input title="Ingresa tu correo" class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                 
-                <textarea name="message" placeholder="Ingresa tu mensaje" required></textarea>
+                <textarea title="Ingresa tu mensaje" name="message" placeholder="Ingresa tu mensaje" required></textarea>
                 
-                <input class="btn" type="submit" value="Enviar" onclick="sendMail()">
+                <input title="Enviar" class="btn" type="submit" value="Enviar" onclick="sendMail()">
             </form>
 
             <article class="modal modal-none">
@@ -224,7 +223,7 @@
         </section>
 
         <section class="footer-copyright">
-            &copy; Copyright 2021 - Web desarrollada por <a href="https://www.instagram.com/tonchiserra" target="_blank" rel="noopener">Gonzalo Serra</a>.
+            &copy; Copyright 2021 - Web desarrollada por <a title="Gonzalo Serra" href="./index.html">Gonzalo Serra</a>.
         </section>
     </footer>
 
