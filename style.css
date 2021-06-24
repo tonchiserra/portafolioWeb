@@ -258,18 +258,6 @@ p {
     border: 4px solid var(--title-color);
 }
 
-.about-content .cv-btn {
-    border-radius: 10px;
-    padding: 1rem;
-    display: block;
-    width: auto;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: var(--white-color);
-    background-color: var(--first-color);
-}
-
 
 /*-- Skills --*/
 .skills {
@@ -394,6 +382,7 @@ p {
 .proyect-description .text a {
     color: #1e90ff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .proyect-technologies {
@@ -418,7 +407,7 @@ p {
 
 .proyects > p {
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 
@@ -427,10 +416,7 @@ p {
 .contact {
     padding: 1rem;
     text-align: center;
-    background: url(./assets/background-contact.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    margin-top: 5rem;
 }
 
 .contact .title {
@@ -456,7 +442,7 @@ p {
 
 .contact-form {
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 0;
     border-radius: 10px;
     background: var(--white-color);
 }
@@ -565,10 +551,11 @@ p {
     }
 }
 
-
-/*-- Footer --*/
 .footer {
-    background-color: var(--black-color);
+    background: url(./assets/background-contact.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     color: var(--white-color);
     text-align: center;
     padding: 1rem;
@@ -578,7 +565,7 @@ p {
 /*-- Redes sociales --*/
 .footer-social-networks a {
     font-size: 2.5rem;
-    margin: .5rem;
+    margin: 0 .5rem;
 }
 
 .footer-social-networks a:hover {
@@ -586,20 +573,8 @@ p {
 }
 
 .footer-social-networks a i {
-    padding-bottom: 1rem;
+    margin: 1rem 0;
 }
-
-
-/*-- Copyright --*/
-.footer-copyright a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-copyright a:hover {
-    color: var(--first-color);
-}
-
 
 
 /*-- Media Queries ----------------------------------------------------------------------*/
@@ -624,10 +599,6 @@ p {
 
     .about-image {
         width: 30%;
-    }
-
-    .about-content .cv-btn {
-        display: inline-block;
     }
 
     .skills-content {

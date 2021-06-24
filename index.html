@@ -41,7 +41,7 @@
             <nav class="menu">
                 <a href="#inicio" title="Inicio">Inicio</a>
                 <a href="#acerca" title="Acerca">Acerca</a>
-                <a href="#habilidades" title="Habilidades">Habilidades</a>
+                <a href="#skills" title="Skills">Skills</a>
                 <a href="#proyectos" title="Proyectos">Proyectos</a>
                 <a href="#contacto" title="Contacto">Contacto</a>
             </nav>
@@ -73,15 +73,13 @@
                 ¡Hola! me llamo Gonzalo Serra pero puedes decirme <b>Tonchi</b>. Soy oriundo de la ciudad de <b>Totoras, Santa Fe, Argentina</b>. En 2019 comencé a estudiar <b>Ingeniería en Sistemas de Información</b> en la Universidad Tecnológica Nacional FRRo y de forma autodidacta me centro en aprender y mejorar mis habilidades como Frontend Developer.
                 <br><br>
                 Te invito a que sigas conociendo más sobre mi.
-                <br><br><br>
-                <a href="./assets/cv.pdf" rel="noopener" target="_blank" title="Descarga mi CV" class="cv-btn">Descarga mi CV</a>
             </p>
             <img class="about-image" src="assets/profile-image.jpg" title="Foto de Gonzalo Serra" alt="Gonzalo Serra">
         </div>
     </section>
 
 
-    <section id="habilidades" class="skills container">
+    <section id="skills" class="skills container">
         <h3 class="title">Tecnologías que aplico</h3>
         <div class="skills-content">
             <div title="HTML" class="progressHTML"><span><strong>HTML</strong></span></div>
@@ -125,10 +123,10 @@
         <div class="proyects-content">
 
             <article class="proyect" title="Proyecto 'ToDoList'">
-                <a title="Imagen de 'ToDoList'" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener"><img src="assets/todolist-image.png" title="Imagen de 'ToDoList'" alt="ToDoList image" class="proyect-image"></a>
+                <a title="Imagen de 'ToDoList'" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener noreferrer"><img src="assets/todolist-image.png" title="Imagen de 'ToDoList'" alt="ToDoList image" class="proyect-image"></a>
                 <div class="proyect-description">
-                    <h4 title="ToDoList" class="proyect-title"><a title="ToDoList" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener">ToDoList</a></h4>
-                    <p class="text">App Web de lista de tareas, creada utilizando create-react-app. Las tareas realizadas y a realizar se almacenan en el LocalStorage. <a title="Probar proyecto 'ToDoList'" href="https://todolist-gserra.netlify.app/" target="_blank" rel="noopener">Probar ahora</a>.</p>
+                    <h4 title="ToDoList" class="proyect-title"><a title="ToDoList" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener noreferrer">ToDoList</a></h4>
+                    <p class="text">App Web de lista de tareas, creada utilizando create-react-app. Las tareas realizadas y a realizar se almacenan en el LocalStorage. <a title="Probar proyecto 'ToDoList'" href="https://todolist-gserra.netlify.app/" target="_blank" rel="noopener noreferrer">Probar ahora</a></p>
                 </div>
                 <div class="proyect-technologies">
                     <i class="fab fa-react"></i>
@@ -139,9 +137,9 @@
             </article>
 
             <article class="proyect" title="Proyecto 'Price-list'">
-                <a title="Imagen de 'Price-list'" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener"><img src="assets/price-list-image.png" title="Imagen de 'Price-list'" alt="Price-list image" class="proyect-image"></a>
+                <a title="Imagen de 'Price-list'" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener noreferrer"><img src="assets/price-list-image.png" title="Imagen de 'Price-list'" alt="Price-list image" class="proyect-image"></a>
                 <div class="proyect-description">
-                    <h4 title="Price-list" class="proyect-title"><a title="Price-list" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener">Price-list</a></h4>
+                    <h4 title="Price-list" class="proyect-title"><a title="Price-list" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener noreferrer">Price-list</a></h4>
                     <p class="text">Lista de precios creada en Electron JS. Esta aplicación te permite listar productos con su precio y descripción, además de editar o eliminar el producto.</p>
                 </div>
                 <div class="proyect-technologies">
@@ -175,56 +173,51 @@
             </article>
         </div>
 
-        <p>Puedes ver todos mis proyectos en mi perfil de <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener">GitHub</a>.</p>
+        <p>Puedes ver todos mis proyectos en mi perfil de <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener noreferrer">GitHub</a>.</p>
     </section>
-
-    <section id="contacto" class="contact">
-        <h3 class="title">Contacto</h3>
-
-        <div class="contact-content">
-            <p class="text">
-                Puedes contactarme enviando un mail <br>
-                o a través de mis redes sociales. <br>
-                <u>¡Espero tu mensaje!</u>
-            </p>
-
-            <form action="https://formsubmit.co/ajax/serragonzalo1@gmail.com" class="contact-form">
-                <input title="Ingresa tu nombre" class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                <input title="Ingresa tu correo" class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-                
-                <textarea title="Ingresa tu mensaje" name="message" placeholder="Ingresa tu mensaje" required></textarea>
-                
-                <input title="Enviar" class="btn" type="submit" value="Enviar" onclick="sendMail()">
-            </form>
-
-            <article class="modal modal-none">
-                <div class="modal-content">
-                    <div class="modal-contact-response">
-                        <h3 class="title">¡Gracias!<br>Recibí tu mensaje</h3>
-                        <i class="far fa-check-circle"></i>
-                    </div>
-                   
-                    <div class="contact-loader modal-none">
-                        <h3 class="title">Enviando...</h3>
-                        <i class="fas fa-circle-notch"></i>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
 
     <footer class="footer">
-        <section class="footer-social-networks">
-            <a href="https://www.twitter.com/tonchiserra" target="_blank" title="Twitter" rel="noopener"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://www.instagram.com/tonchiserra" target="_blank" title="Instagram" rel="noopener"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/serragonzalo/" target="_blank" title="LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <section id="contacto" class="contact">
+            <h3 class="title">Contacto</h3>
+
+            <div class="contact-content">
+                <p class="text">
+                    Puedes contactarme enviando un mail o a través de mis redes sociales. <br>
+                    <u>¡Espero tu mensaje!</u>
+                </p>
+
+                <section class="footer-social-networks">
+                    <a href="https://www.twitter.com/tonchiserra" target="_blank" title="Twitter" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/tonchiserra" target="_blank" title="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/serragonzalo/" target="_blank" title="LinkedIn" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </section>
+
+                <form action="https://formsubmit.co/ajax/serragonzalo1@gmail.com" class="contact-form">
+                    <input title="Ingresa tu nombre" class="contact-input-text" type="text" name="name" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    <input title="Ingresa tu correo" class="contact-input-text" type="email" name="email" placeholder="Ingresa tu correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                    
+                    <textarea title="Ingresa tu mensaje" name="message" placeholder="Ingresa tu mensaje" required></textarea>
+                    
+                    <input title="Enviar" class="btn" type="submit" value="Enviar" onclick="sendMail()">
+                </form>
+
+                <article class="modal modal-none">
+                    <div class="modal-content">
+                        <div class="modal-contact-response">
+                            <h3 class="title">¡Gracias!<br>Recibí tu mensaje</h3>
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                    
+                        <div class="contact-loader modal-none">
+                            <h3 class="title">Enviando...</h3>
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="footer-copyright">
-            &copy; Copyright 2021 - Web desarrollada por <a title="Gonzalo Serra" href="./index.html">Gonzalo Serra</a>.
-        </section>
     </footer>
 
     <script src="script.js"></script>
