@@ -99,7 +99,7 @@ p {
 }
 
 .title {
-    font-size: 9.5vw;
+    font-size: 2.5rem;
     color: var(--title-color);
     text-align: center;
     margin: 2rem 0;
@@ -225,12 +225,12 @@ p {
 }
 
 .hero-image-title {
-    font-size: 10vw;
+    font-size: 3rem;
     color: var(--white-color);
 }
 
 .hero-image-subtitle {
-    font-size: 5vw;
+    font-size: 1.5rem;
     color: var(--white-color);
     padding-bottom: 10px;
 }
@@ -265,75 +265,75 @@ p {
 }
 
 .skills-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
 }
 
-.skills-content > div {
+.skill-1 {
     background-color: var(--gray-color);
     border-radius: 10px;
+    height: 7rem;
+    width: 7rem;
+    margin: auto;
+    padding: 1rem .5rem .5rem .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.skills-content > div > span {
-    display: inline-block;
-    height: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    background: var(--first-color);
+.skill-1 > svg,
+.skill-1 > i {
+    font-size: 3rem;
+    margin: 0;
     color: var(--text-color);
 }
 
-.progressHTML span {
-    width: 80%;
+.skill-1 > svg {
+    height: 3rem;
+    margin: 0 auto;
 }
 
-.progressCSS span {
-    width: 70%;
+.skill-1 > p {
+    margin: 0;
+    font-weight: bold;
 }
 
-.progressJS span {
-    width: 45%;
+.skills-content-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.progressReact span {
-    width: 20%;
+.skills-content-2 > div > h4 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
 }
 
-.progressMySQL span {
-    width: 20%;	
+.skills-content-2 > div {
+    margin: auto;
 }
 
-.progressGit span {
-    width: 35%;
+.skill-2 {
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    height: 15rem;
+    width: 20rem;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.skills p {
-    text-align: center;
-    margin: 2rem;
-}
-
-.skills-content2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    text-align: center;
-}
-
-.skills-content2-l {
-
-}
-
-.skills-content2-r {
-
-}
-
-.skills-content2 ul {
-    padding: 0;
-}
-
-.skills-content2 li {
-    list-style: none;
+.skill-2 > p {
+    margin: 0;
+    font-weight: bold;
 }
 
 /*-- Proyectos --*/
@@ -578,19 +578,18 @@ p {
 
 
 /*-- Media Queries ----------------------------------------------------------------------*/
-
 /*-- Tablet --*/
 @media screen and (min-width:768px){
     .title {
-        font-size: 7vw;
+        font-size: 3rem;
     }
 
     .hero-image-title {
-        font-size: 8vw;
+        font-size: 4rem;
     }
 
     .hero-image-subtitle {
-        font-size: 4vw;
+        font-size: 2rem;
     }
 
     .about {
@@ -599,14 +598,6 @@ p {
 
     .about-image {
         width: 30%;
-    }
-
-    .skills-content {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .skills-content2 {
-        grid-template-columns: 1fr 1fr;
     }
 
     .proyects-content {
@@ -618,7 +609,7 @@ p {
 /*-- Desktop --*/
 @media screen and (min-width: 1024px) {
     .title {
-        font-size: 4.5vw;
+        font-size: 3rem;
     }
 
     .header {
@@ -649,11 +640,11 @@ p {
     }
 
     .hero-image-title {
-        font-size: 6vw;
+        font-size: 5rem;
     }
 
     .hero-image-subtitle {
-        font-size: 3vw;
+        font-size: 3rem;
     }
 
     .about {
@@ -684,10 +675,6 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         align-content: center;
-    }
-
-    .skills-content {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .proyects {
