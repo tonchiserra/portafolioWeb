@@ -30,7 +30,8 @@
         <section class="container">
 
             <div class="logo">
-                <a href="./index.html" title="Inicio">GS</a>
+                <a href="#inicio" class="mobile-active" title="Inicio">GS</a>
+                <a href="#inicio-desktop" class="desktop-active" title="Inicio">GS</a>
             </div>
 
             <button class="menu-btn" title="Menu">
@@ -39,8 +40,10 @@
             </button>
 
             <nav class="menu">
-                <a href="#inicio" title="Inicio">Inicio</a>
-                <a href="#acerca" title="Acerca">Acerca</a>
+                <a href="#inicio" class="mobile-active" title="Inicio">Inicio</a>
+                <a href="#inicio-desktop" class="desktop-active" title="Inicio">Inicio</a>
+                <a href="#acerca" class="mobile-active" title="Acerca">Acerca</a>
+                <a href="#acerca-desktop" class="desktop-active" title="Acerca">Acerca</a>
                 <a href="#skills" title="Skills">Skills</a>
                 <a href="#proyectos" title="Proyectos">Proyectos</a>
                 <a href="#contacto" title="Contacto">Contacto</a>
@@ -49,29 +52,73 @@
     </header>
 
 
-    <section id="inicio" class="home">
-        <article class="hero-image" style="--hero-image: url(assets/hero-image-home.png);">
+
+    <section id="inicio" class="home mobile-active">
+        <article class="hero-image">
             <aside>
                 <div class="hero-image-content">
                     <h1 class="hero-image-title">Gonzalo Serra</h1>
                     <h2 class="hero-image-subtitle">Frontend developer</h2>                
                     <a href="#contacto" title="Contáctame" class="btn">Contáctame</a>
+                    
+                    <section id="acerca" class="about container">
+                        <div class="about-content">  
+                            <img class="about-image" src="assets/profile-image.jpg" title="Foto de Gonzalo Serra" alt="Gonzalo Serra">
+                            <p class="text">
+                                ¡Hola! me llamo Gonzalo Serra pero puedes decirme <b>Tonchi</b>. Soy oriundo de la ciudad de <b>Totoras, Santa Fe, Argentina</b>. En 2019 comencé a estudiar <b>Ingeniería en Sistemas de Información</b> en la Universidad Tecnológica Nacional FRRo y de forma autodidacta me centro en aprender y mejorar mis habilidades como Frontend Developer.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="footer-social-networks">
+                        <a href="https://www.twitter.com/tonchiserra" target="_blank" title="Twitter" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/tonchiserra" target="_blank" title="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/serragonzalo/" target="_blank" title="LinkedIn" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </section>
                 </div>
             </aside>
         </article>
     </section>
 
 
-    <section id="acerca" class="about container">
-        <h3 class="title">¿Quién soy?</h3>
-        <div class="about-content">    
-            <p class="text">
-                ¡Hola! me llamo Gonzalo Serra pero puedes decirme <b>Tonchi</b>. Soy oriundo de la ciudad de <b>Totoras, Santa Fe, Argentina</b>. En 2019 comencé a estudiar <b>Ingeniería en Sistemas de Información</b> en la Universidad Tecnológica Nacional FRRo y de forma autodidacta me centro en aprender y mejorar mis habilidades como Frontend Developer.
-                <br><br>
-                Te invito a que sigas conociendo más sobre mi.
-            </p>
-            <img class="about-image" src="assets/profile-image.jpg" title="Foto de Gonzalo Serra" alt="Gonzalo Serra">
-        </div>
+    <section id="inicio-desktop" class="home desktop-active">
+        <article class="hero-image">
+            <aside>
+                <div class="hero-image-content">
+                    <div class="hic-left">
+                        <img class="about-image" src="assets/profile-image.jpg" title="Foto de Gonzalo Serra" alt="Gonzalo Serra">
+
+                        <section class="home-social-networks">
+                            <a href="https://www.twitter.com/tonchiserra" target="_blank" title="Twitter" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/tonchiserra" target="_blank" title="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+                            <a href="https://www.github.com/tonchiserra" target="_blank" title="GitHub" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+                            <a href="https://www.linkedin.com/in/serragonzalo/" target="_blank" title="LinkedIn" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        </section>
+                    </div>
+                    <div class="hic-right">
+                        <h1 class="hero-image-title">Gonzalo Serra</h1>
+                        <h2 class="hero-image-subtitle">Frontend developer</h2>                
+                        
+                        <section id="acerca-desktop" class="about">
+                            <div class="about-content">  
+                                <p class="text">
+                                    ¡Hola! me llamo Gonzalo Serra pero puedes decirme <b>Tonchi</b>. Soy oriundo de la ciudad de <b>Totoras, Santa Fe, Argentina</b>. En 2019 comencé a estudiar <b>Ingeniería en Sistemas de Información</b> en la Universidad Tecnológica Nacional FRRo y de forma autodidacta me centro en aprender y mejorar mis habilidades como Frontend Developer.
+                                </p>
+                            </div>
+                        </section>
+
+                        <a href="#contacto" title="Contáctame" class="btn">Contáctame</a>
+                        
+                        <h4>Últimos proyectos</h4>
+                        <section class="last-proyects">
+                            <a title="Imagen de 'ToDoList'" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener noreferrer"><img src="assets/todolist-image.png" title="Imagen de 'ToDoList'" alt="ToDoList image" class="proyect-image"></a>
+                            <a title="Imagen de 'Price-list'" href="https://github.com/tonchiserra/price-list" target="_blank" rel="noopener noreferrer"><img src="assets/price-list-image.png" title="Imagen de 'Price-list'" alt="Price-list image" class="proyect-image"></a>
+                        </section>
+                    </div>                    
+                </div>
+            </aside>
+        </article>
     </section>
 
 
@@ -112,8 +159,8 @@
                     <p>Linux</p>
                     <p>Terminal</p>
                     <p>GitHub</p>
-                    <p>IBM RSM</p>
-                    <p>Workbench</p>
+                    <p>IBM Rational SM</p>
+                    <p>MySQL Workbench</p>
                 </div>
             </div>
 

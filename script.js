@@ -18,7 +18,6 @@
     })
 })(document)
 
-
 /* ------ Contacto ------*/
 function sendMail(){
     const $form = document.querySelector(".contact-form");
