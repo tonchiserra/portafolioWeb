@@ -768,7 +768,7 @@ p {
 
     .last-proyects .proyect-image {
         border-radius: 10px;
-        height: 100%;
+        height: auto;
     }
 
     .skills {
