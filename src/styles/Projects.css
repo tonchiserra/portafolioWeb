@@ -1,0 +1,144 @@
+.projects {
+  background-color: var(--gray-color);
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: var(--max-width);
+}
+
+.target-project {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+
+.project-description {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.project-description > .subtitle {
+  margin: 0;
+}
+
+.project-description > .subtitle > a {
+  color: var(--second-text-color);
+  padding: 0;
+  margin: 0;
+}
+
+.project-description > .text {
+  margin: .5rem 0 0 0;
+  text-align: justify;
+  width: 100%;
+  height: 85px;
+  overflow: auto;
+}
+
+.project-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 0 2.5rem 0;
+  padding: 1rem;
+}
+
+.demo-btn-true,
+.demo-btn-false,
+.code-btn {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.demo-btn-true {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border: 2px solid var(--first-color);
+}
+
+.demo-btn-false {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  border: 2px solid var(--gray-color);
+  cursor: default;
+  pointer-events: none;
+}
+
+.code-btn {
+  background-color: var(--white-color);
+  color: var(--first-color);
+  border: 2px solid var(--first-color);
+}
+
+.demo-btn-true:hover,
+.code-btn:hover,
+.project-description > .subtitle > a:hover {
+  opacity: .75;
+}
+
+.project-technologies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: .5rem;
+  background-color: var(--gray-color);
+  padding: .5rem 1rem;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.project-technologies > img {
+  height: 1.2rem;
+}
+
+.projects > .text {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.projects > .text > a {
+  color: var(--first-color);
+}
+
+.projects > .text > a:hover {
+  opacity: .75;
+}
+
+@media screen and (min-width: 500px){
+
+  .projects-content{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  .projects {
+    justify-content: center;
+  }
+
+  .projects-content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

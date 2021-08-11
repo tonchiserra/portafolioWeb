@@ -1,0 +1,51 @@
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--second-text-color);
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--second-text-color);
+  margin: 1rem 0;
+}
+
+.text {
+  color: var(--second-text-color);
+  line-height: 1.3;
+  font-size: 1rem;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.social-networks-item > img {
+  width: 2.5rem;
+  transition: all 300ms ease-in-out;
+}
+
+.social-networks-item > img:hover {
+  opacity: .75;
+}
+
+.none {
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .social-networks-item > img {
+    width: 2rem;
+  }
+} 

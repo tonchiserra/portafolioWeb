@@ -1,0 +1,140 @@
+.nav-main {
+  background-color: var(--second-color);
+  position: fixed;
+  height: var(--header-height);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+.nav-main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.nav-main-logo > a {
+  color: var(--first-color);
+  font-size: 2rem;
+}
+
+.nav-main-logo > a:hover {
+  opacity: .75;
+}
+
+.menu-btn {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  opacity: .75;
+}
+
+.nav-main-menu {
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+  background-color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-100vw);
+  transition: all 0.3s ease-in-out;
+}
+
+.is-active {
+  transform: translateY(0);
+}
+
+.nav-main-link {
+  height: var(--header-height);
+  width: 100vw;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.nav-main-link:hover {
+  background-color: var(--first-color);
+}
+
+.nav-main-content > .social-networks {
+  display: none;
+}
+
+.nav-main-menu > .social-networks {
+  position: absolute;
+  bottom: 5rem;
+}
+
+.nav-main-menu > .social-networks > a > img,
+.nav-main-content > .social-networks > a > img {
+  height: 1.5rem;
+}
+
+@media screen and (min-width: 1024px){
+  
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-main {
+    padding: 0 2rem;
+    position: fixed;
+  }
+
+  .nav-main-content {
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr;
+  }
+
+  .nav-main-logo > a {
+    font-size: 2.5rem;
+  }
+
+  .nav-main-menu {
+    position: unset;
+    width: unset;
+    height: var(--header-height);
+    flex-direction: row;
+    align-items: center;
+    transform: unset;
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+  }
+
+  .nav-main-link {
+    height: unset;
+    width: unset;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+    border-radius: 100px;
+  }
+
+  .nav-main-content > .social-networks {
+    display: flex;
+    justify-content: right;
+  }
+
+  .nav-main-menu > .social-networks {
+    display: none;
+    position: unset;
+  }
+}
