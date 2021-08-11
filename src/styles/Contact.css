@@ -7,7 +7,7 @@
 }
 
 .contact > .title {
-  color: brown;
+  color: var(--white-color);
 }
 
 .contact-content {
