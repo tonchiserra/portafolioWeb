@@ -36,6 +36,7 @@ export function Contact(){
         }, 2150);
         setTimeout(() => {
           $check.classList.remove("modal-active");
+          $check.classList.remove("modal-active-down");
         }, 4150);
       })
     })
