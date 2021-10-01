@@ -1,16 +1,18 @@
 .home {
   padding-top: var(--header-height);
-  min-height: 100vh;
+  max-height: 900px;
 }
 
 .home-content {
   max-width: var(--max-width);
   height: calc(100vh - var(--header-height));
+  max-height: calc(900px - var(--header-height));
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 2rem;
   margin: auto;
+  position: relative;
 }
 
 .principal-title {
@@ -30,7 +32,6 @@
 .profile-image {
   width: calc(100vw - 4rem);
   height: auto;
-  margin-bottom: 0;
   position: absolute;
   bottom: 0;
 }
@@ -71,17 +72,17 @@
 
   .profile-image {
     width: calc(100vw - 4rem);
-    max-height: 40rem;
+    max-height: 50vh;
   }
 }
 
 /*-- Desktop --*/
 @media screen and (min-width: 1024px){
-  
+
   .home-content {
     align-items: unset;
     justify-content: flex-end;
-    position: relative;
+    
   }
   
   .principal-title {
@@ -96,6 +97,7 @@
   
   .profile-image {
     width: 37rem;
+    max-height: 95vh;
     margin-bottom: unset;
     position: absolute;
     right: 2rem;
@@ -135,12 +137,6 @@
     max-width: 250px;
     border-radius: 10px;
   }
-}
-
-
-@media screen and (min-height: 900px){
-
-
 }
 
 @media screen and (min-width: 1400px) and (min-height: 900px) {

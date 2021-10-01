@@ -21,7 +21,6 @@ export function Home(){
             <a title="Imagen de 'ToDoList'" href="https://github.com/tonchiserra/ToDoList" target="_blank" rel="noopener noreferrer"><img src={todolistImage} title="Imagen de 'ToDoList'" alt="ToDoList" className="last-project-image" /></a>           
           </div>
         </div>
-
         <img src={profileImage} alt="Imagen de Gonzalo Serra" className="profile-image" />
       </div>
     </section>
