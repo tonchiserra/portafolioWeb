@@ -10,6 +10,7 @@ import figma from '../assets/figma.svg';
 import weatherImage from '../assets/weather-app-image.png';
 import todoImage from '../assets/todolist-image.png';
 import pricelistImage from '../assets/price-list-image.png';
+import shopcartImage from '../assets/shopcart-image.png';
 
 
 export function Projects(){
@@ -19,7 +20,7 @@ export function Projects(){
     
       <div className="projects-content">
 
-        <TargetProject 
+        <TargetProject
           name="WeatherApp"
           image={weatherImage}
           desc="Aplicación Web para saber cómo se encuentra clima actualmente en cualquier parte del mundo. Utilizando la API de OpenWeather y ReactJS."
@@ -46,6 +47,16 @@ export function Projects(){
           demo={false}
           techs={[electron, javascript, html, css]}
           github="https://github.com/tonchiserra/price-list"
+          linkDemo=""
+        />
+
+        <TargetProject 
+          name="ShopCart"
+          image={shopcartImage}
+          desc="Carrito de compras creado con React.js utilizando solo componentes de clases. Puedes agregar y eliminar productos."
+          demo={false}
+          techs={[react, javascript, html, css]}
+          github="https://github.com/tonchiserra/shopcart"
           linkDemo=""
         />
 

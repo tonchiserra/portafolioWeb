@@ -17,7 +17,7 @@ export function TargetProject({name, image, desc, demo, techs, github, linkDemo}
 
       <div className="project-technologies">
         {techs.map((tech) => (
-          <img src={tech} alt="#" />
+          <img key={tech} src={tech} alt="#" />
         ))}
       </div>
     </article>
