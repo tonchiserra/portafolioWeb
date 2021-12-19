@@ -15,6 +15,7 @@ import iconAxure from '../assets/axure.svg';
 import iconIBMRSM from '../assets/img-rsm.svg';
 import iconWorkbench from '../assets/workbench.svg';
 import iconTerminal from '../assets/terminal.svg';
+import iconFormik from '../assets/formik.png';
 
 export function Skills(){
   return(
@@ -33,6 +34,7 @@ export function Skills(){
 
         <div className="extra-skills-content">
           <TargetExtraSkills img={iconStyCom} name="Styled Components" />
+          <TargetExtraSkills img={iconFormik} name="Formik" />
           <TargetExtraSkills img={iconFigma} name="Figma" />
           <TargetExtraSkills img={iconAxure} name="Axure RP" />        
           <TargetExtraSkills img={iconIBMRSM} name="IBM Rational SM" />         
