@@ -16,6 +16,7 @@ import iconIBMRSM from '../assets/img-rsm.svg';
 import iconWorkbench from '../assets/workbench.svg';
 import iconTerminal from '../assets/terminal.svg';
 import iconFormik from '../assets/formik.png';
+import iconRouter from '../assets/router.svg';
 
 export function Skills(){
   return(
@@ -33,6 +34,7 @@ export function Skills(){
         </div>
 
         <div className="extra-skills-content">
+          <TargetExtraSkills img={iconRouter} name="React Router" />
           <TargetExtraSkills img={iconStyCom} name="Styled Components" />
           <TargetExtraSkills img={iconFormik} name="Formik" />
           <TargetExtraSkills img={iconFigma} name="Figma" />

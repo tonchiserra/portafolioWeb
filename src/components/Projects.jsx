@@ -6,6 +6,8 @@ import javascript from '../assets/javascript.svg';
 import css from '../assets/css3.svg';
 import html from '../assets/html5.svg';
 import figma from '../assets/figma.svg';
+import formik from '../assets/formik.png';
+import styledcomponents from '../assets/styled-components.svg';
 import weatherImage from '../assets/weather-app-image.png';
 import todoImage from '../assets/todolist-image.png';
 import searchimgImage from '../assets/search-img-image.png';
@@ -34,7 +36,7 @@ export function Projects(){
           image={searchimgImage}
           desc="Buscador de imagenes. Mediante la API de Unsplash podemos buscar increíbles imágenes sobre cualquier tema."
           demo={true}
-          techs={[react, javascript, html, css]}
+          techs={[react,formik, styledcomponents, javascript, html, css]}
           github="https://github.com/tonchiserra/search-img"
           linkDemo="https://gserra-searchimg.netlify.app/"
         />
