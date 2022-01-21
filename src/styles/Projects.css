@@ -16,14 +16,14 @@
 
 .target-project {
   background-color: var(--white-color);
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
 .project-image {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
   margin: 0;
 }
 
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .demo-btn-true {
