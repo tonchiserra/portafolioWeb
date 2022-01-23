@@ -16,7 +16,7 @@ export function AboutMe(){
       <TargetAboutMe 
         icon={iconQuienSoy}
         subtitle="¿Quién soy?"
-        text={<p className="text">¡Hola! Mi nombre es Gonzalo Serra pero puedes llamarme <b>Tonchi</b>. Tengo 20 años y soy un apacionado por el mundo IT. Actualmente me encuentro viviendo en <b>Rosario, Santa Fe, Argentina</b>.</p>}
+        text={<p className="text">¡Hola! Mi nombre es Gonzalo Serra pero puedes llamarme <b>Tonchi</b>. Tengo 20 años y soy un apacionado por el mundo IT.</p>}
       />
 
       <TargetAboutMe 
@@ -28,7 +28,7 @@ export function AboutMe(){
       <TargetAboutMe 
         icon={iconHobbies} 
         subtitle="Aprendizaje"
-        text={<p className="text">Actualmente, de forma autodidacta, estoy aprendiendo sobre <b>React.js</b> y en cuanto a la universidad, estoy aprendiendo sobre <b>Bases de Datos</b> y <b>Diseño UX</b>.</p>}
+        text={<p className="text">Actualmente, de forma autodidacta, estoy aprendiendo sobre <b>React.js</b> y <b>Redux</b>. En cuanto a la universidad, estoy aprendiendo sobre <b>Bases de Datos</b> y <b>Diseño UX</b>.</p>}
       />
 
       </div>

@@ -57,7 +57,7 @@
   font-family: var(--font);
   background-color: var(--gray-color);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   font-size: 1rem;
 }
