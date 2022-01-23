@@ -18,6 +18,7 @@ import iconTerminal from '../assets/terminal.svg';
 import iconFormik from '../assets/formik.png';
 import iconRouter from '../assets/router.svg';
 import iconRedux from '../assets/redux.svg';
+import iconCommercejs from '../assets/commercejs.svg';
 
 export function Skills(){
   return(
@@ -35,6 +36,7 @@ export function Skills(){
         </div>
 
         <div className="extra-skills-content">
+          <TargetExtraSkills img={iconCommercejs} name="Commerce.js" />
           <TargetExtraSkills img={iconRouter} name="React Router" />
           <TargetExtraSkills img={iconStyCom} name="Styled Components" />
           <TargetExtraSkills img={iconFormik} name="Formik" />
