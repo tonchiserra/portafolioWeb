@@ -7,7 +7,7 @@ const CardES = styled.div`
   background-color: #fff;
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
   justify-content: flex-start;
 
   & > img {

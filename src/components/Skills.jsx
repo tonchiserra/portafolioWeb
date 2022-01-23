@@ -17,6 +17,7 @@ import iconWorkbench from '../assets/workbench.svg';
 import iconTerminal from '../assets/terminal.svg';
 import iconFormik from '../assets/formik.png';
 import iconRouter from '../assets/router.svg';
+import iconRedux from '../assets/redux.svg';
 
 export function Skills(){
   return(
@@ -25,11 +26,11 @@ export function Skills(){
       <div className="skills-content">
 
         <div className="skills-target-content">
-          <TargetSkills img={iconHtml} name="HTML" />
           <TargetSkills img={iconCss} name="CSS" />
           <TargetSkills img={iconJs} name="JavaScript" />
-          <TargetSkills img={iconGit} name="Git" />
           <TargetSkills img={iconReact} name="React.js" />
+          <TargetSkills img={iconRedux} name="Redux" />
+          <TargetSkills img={iconGit} name="Git" />
           <TargetSkills img={iconMySql} name="MySQL" />
         </div>
 
@@ -38,13 +39,12 @@ export function Skills(){
           <TargetExtraSkills img={iconStyCom} name="Styled Components" />
           <TargetExtraSkills img={iconFormik} name="Formik" />
           <TargetExtraSkills img={iconFigma} name="Figma" />
+          <TargetExtraSkills img={iconHtml} name="HTML" />
           <TargetExtraSkills img={iconAxure} name="Axure RP" />        
           <TargetExtraSkills img={iconIBMRSM} name="IBM Rational SM" />         
           <TargetExtraSkills img={iconWorkbench} name="MySQL Workbench" />          
           <TargetExtraSkills img={iconTerminal} name="Terminal" />
-        </div>
 
-        <div className="extra-skills-content">
           <TargetExtraSkills2 name="Inglés básico" />
           <TargetExtraSkills2 name="Diseño UX/UI" />
           <TargetExtraSkills2 name="Análisis de sistemas" />
