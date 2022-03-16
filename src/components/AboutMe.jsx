@@ -28,7 +28,7 @@ export function AboutMe(){
       <TargetAboutMe 
         icon={iconHobbies} 
         subtitle="Aprendizaje"
-        text={<p className="text">Actualmente, de forma autodidacta, estoy aprendiendo sobre <b>React.js</b> y <b>Redux</b>. En cuanto a la universidad, estoy aprendiendo sobre <b>Bases de Datos</b> y <b>Diseño UX</b>.</p>}
+        text={<p className="text">Actualmente, de forma autodidacta, estoy aprendiendo sobre <b>React.js</b> y <b>Redux</b>. En cuanto a la universidad, estoy aprendiendo sobre <b>Java</b>.</p>}
       />
 
       </div>
