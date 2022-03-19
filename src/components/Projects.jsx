@@ -8,10 +8,12 @@ import html from '../assets/html5.svg';
 import figma from '../assets/figma.svg';
 import formik from '../assets/formik.png';
 import styledcomponents from '../assets/styled-components.svg';
+import router from '../assets/router.svg';
+
 import weatherImage from '../assets/weather-app-image.png';
 import todoImage from '../assets/todolist-image.png';
 import searchimgImage from '../assets/search-img-image.png';
-import shopcartImage from '../assets/shopcart-image.png';
+import almohadoniaImage from '../assets/almohadonia-image.png';
 
 
 export function Projects(){
@@ -52,13 +54,13 @@ export function Projects(){
         />
 
         <TargetProject 
-          name="ShopCart"
-          image={shopcartImage}
-          desc="Carrito de compras creado con React.js utilizando solo componentes de clases. Puedes agregar y eliminar productos."
-          demo={false}
-          techs={[react, javascript, html, css]}
-          github="https://github.com/tonchiserra/shopcart"
-          linkDemo=""
+          name="Almohadonia"
+          image={almohadoniaImage}
+          desc="E-commerce desarrollado con el motor Commerce.js donde puedes elegir un producto, añadirlo al carrito, y continuar con el checkout."
+          demo={true}
+          techs={[react, router, formik, styledcomponents, javascript, html, css, figma]}
+          github="https://github.com/tonchiserra/almohadonia"
+          linkDemo="https://almohadonia.netlify.app/"
         />
 
       </div>
