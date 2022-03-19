@@ -1,6 +1,6 @@
 import '../styles/Home.css';
 
-import weatherImage from '../assets/weather-app-image.png';
+import almohadoniaImage from '../assets/almohadonia-image.png';
 import searchimgImage from '../assets/search-img-image.png';
 import profileImage from '../assets/profile-image.svg';
 
@@ -17,7 +17,7 @@ export function Home(){
         <div className="last-projects">
           <h3 className="title">Últimos proyectos</h3>
           <div className="last-projects-content">
-            <a title="Imagen de 'WeatherApp'" href="https://github.com/tonchiserra/weather-app" target="_blank" rel="noopener noreferrer"><img src={weatherImage} title="Imagen de 'WeatherApp'" alt="WeatherApp" className="last-project-image" /></a>
+            <a title="Imagen de 'Almohadonia'" href="https://github.com/tonchiserra/almohadonia" target="_blank" rel="noopener noreferrer"><img src={almohadoniaImage} title="Imagen de 'Almohadonia'" alt="Almohadonia" className="last-project-image" /></a>
             <a title="Imagen de 'SearchImg'" href="https://github.com/tonchiserra/search-img" target="_blank" rel="noopener noreferrer"><img src={searchimgImage} title="Imagen de 'SearchImg'" alt="SearchImg" className="last-project-image" /></a>           
           </div>
         </div>
