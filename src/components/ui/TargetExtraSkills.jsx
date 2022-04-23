@@ -32,11 +32,3 @@ export function TargetExtraSkills({img, name}){
     </CardES>
   );
 }
-
-export function TargetExtraSkills2({name}){
-  return(
-    <CardES>
-      <p>{name}</p>
-    </CardES>
-  );
-}

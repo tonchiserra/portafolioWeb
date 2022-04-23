@@ -2,7 +2,7 @@ import '../styles/Home.css';
 
 import almohadoniaImage from '../assets/almohadonia-image.png';
 import searchimgImage from '../assets/search-img-image.png';
-import profileImage from '../assets/profile-image.svg';
+import profileImage from '../assets/profile-image.jpg';
 
 export function Home(){
 
