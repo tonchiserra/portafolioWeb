@@ -1,7 +1,6 @@
 import '../styles/Skills.css';
 import { TargetSkills } from './ui/TargetSkills.jsx';
 import { TargetExtraSkills } from './ui/TargetExtraSkills.jsx';
-import { TargetExtraSkills2 } from './ui/TargetExtraSkills.jsx';
 
 import iconHtml from '../assets/html5.svg';
 import iconCss from '../assets/css3.svg';
@@ -19,6 +18,7 @@ import iconFormik from '../assets/formik.png';
 import iconRouter from '../assets/router.svg';
 import iconRedux from '../assets/redux.svg';
 import iconCommercejs from '../assets/commercejs.svg';
+import iconJava from '../assets/java.svg';
 
 export function Skills(){
   return(
@@ -29,13 +29,14 @@ export function Skills(){
         <div className="skills-target-content">
           <TargetSkills img={iconCss} name="CSS" />
           <TargetSkills img={iconJs} name="JavaScript" />
-          <TargetSkills img={iconReact} name="React.js" />
           <TargetSkills img={iconRedux} name="Redux" />
-          <TargetSkills img={iconGit} name="Git" />
+          <TargetSkills img={iconReact} name="React.js" />
+          <TargetSkills img={iconJava} name="Java" />
           <TargetSkills img={iconMySql} name="MySQL" />
         </div>
 
         <div className="extra-skills-content">
+          <TargetExtraSkills img={iconGit} name="Git" />
           <TargetExtraSkills img={iconCommercejs} name="Commerce.js" />
           <TargetExtraSkills img={iconRouter} name="React Router" />
           <TargetExtraSkills img={iconStyCom} name="Styled Components" />
@@ -46,12 +47,6 @@ export function Skills(){
           <TargetExtraSkills img={iconIBMRSM} name="IBM Rational SM" />         
           <TargetExtraSkills img={iconWorkbench} name="MySQL Workbench" />          
           <TargetExtraSkills img={iconTerminal} name="Terminal" />
-
-          <TargetExtraSkills2 name="Inglés básico" />
-          <TargetExtraSkills2 name="Diseño UX/UI" />
-          <TargetExtraSkills2 name="Análisis de sistemas" />
-          <TargetExtraSkills2 name="Gestión de datos" />
-          <TargetExtraSkills2 name="Redacción de CU" />
         </div>
         
       </div>

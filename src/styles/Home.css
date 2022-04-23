@@ -30,6 +30,7 @@
 }
 
 .profile-image {
+  display: none;
   width: calc(100vw - 4rem);
   height: auto;
   position: absolute;
@@ -50,11 +51,34 @@
 }
 
 .last-projects {
-  display: none;
+  display: unset;
+  margin-bottom: 4rem;
+}
+
+.last-projects > .title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: var(--white-color);
+  text-align: left;
+}
+
+.last-projects-content {
+ display: flex;
+ flex-direction: column;
+ gap: 1.5rem;
+}
+
+.last-projects-content > a:hover {
+  opacity: .75;
+}
+
+.last-project-image {
+  max-width: 250px;
+  border-radius: 5px;
 }
 
 /*-- Tablet --*/
-@media screen and (min-width: 500px){
+@media screen and (min-width: 600px){
 
   .home-content {
     align-items: center;
@@ -73,6 +97,11 @@
   .profile-image {
     width: calc(100vw - 4rem);
     max-height: 50vh;
+    display: none;
+  }
+
+  .last-projects-content {
+    flex-direction: row;
   }
 }
 
@@ -80,9 +109,8 @@
 @media screen and (min-width: 1024px){
 
   .home-content {
-    align-items: unset;
-    justify-content: flex-end;
-    
+    align-items: center;
+    justify-content: center;
   }
   
   .principal-title {
@@ -95,15 +123,6 @@
     font-size: 2.25rem;
   }
   
-  .profile-image {
-    width: 37rem;
-    max-height: 95vh;
-    margin-bottom: unset;
-    position: absolute;
-    right: 2rem;
-    bottom: 0;
-  }
-  
   .contact-btn {
     margin: 3rem 0 4rem 4rem;
     width: 9rem;
@@ -111,31 +130,23 @@
     padding: 1.3rem;
     line-height: 1;
   }
-  
-  .last-projects {
-    display: unset;
-    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .home-content {
+    align-items: unset;
   }
 
-  .last-projects > .title {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: var(--white-color);
-    text-align: left;
-  }
-  
-  .last-projects-content {
-   display: flex;
-   gap: 1.5rem;
-  }
-  
-  .last-projects-content > a:hover {
-    opacity: .75;
-  }
-  
-  .last-project-image {
-    max-width: 250px;
-    border-radius: 5px;
+  .profile-image {
+    width: 35rem;
+    max-height: 95vh;
+    margin-bottom: unset;
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    display: unset;
   }
 }
 

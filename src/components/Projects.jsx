@@ -23,14 +23,14 @@ export function Projects(){
     
       <div className="projects-content">
 
-        <TargetProject
-          name="WeatherApp"
-          image={weatherImage}
-          desc="Aplicación Web para saber cómo se encuentra clima actualmente en cualquier parte del mundo. Utilizando la API de OpenWeather y ReactJS."
+      <TargetProject 
+          name="Almohadonia"
+          image={almohadoniaImage}
+          desc="E-commerce desarrollado con el motor Commerce.js donde puedes elegir un producto, añadirlo al carrito, y continuar con el checkout."
           demo={true}
-          techs={[react, javascript, html, css, figma]}
-          github="https://github.com/tonchiserra/weather-app"
-          linkDemo="https://gserra-weather.netlify.app/"
+          techs={[react, router, formik, styledcomponents, javascript, html, css, figma]}
+          github="https://github.com/tonchiserra/almohadonia"
+          linkDemo="https://almohadonia.netlify.app/"
         />
 
         <TargetProject 
@@ -43,6 +43,16 @@ export function Projects(){
           linkDemo="https://gserra-searchimg.netlify.app/"
         />
 
+        <TargetProject
+          name="WeatherApp"
+          image={weatherImage}
+          desc="Aplicación Web para saber cómo se encuentra clima actualmente en cualquier parte del mundo. Utilizando la API de OpenWeather y ReactJS."
+          demo={true}
+          techs={[react, javascript, html, css, figma]}
+          github="https://github.com/tonchiserra/weather-app"
+          linkDemo="https://gserra-weather.netlify.app/"
+        />
+
         <TargetProject 
           name="TodoList"
           image={todoImage}
@@ -51,16 +61,6 @@ export function Projects(){
           techs={[react, javascript, html, css]}
           github="https://github.com/tonchiserra/ToDoList"
           linkDemo="https://todolist-gserra.netlify.app/"
-        />
-
-        <TargetProject 
-          name="Almohadonia"
-          image={almohadoniaImage}
-          desc="E-commerce desarrollado con el motor Commerce.js donde puedes elegir un producto, añadirlo al carrito, y continuar con el checkout."
-          demo={true}
-          techs={[react, router, formik, styledcomponents, javascript, html, css, figma]}
-          github="https://github.com/tonchiserra/almohadonia"
-          linkDemo="https://almohadonia.netlify.app/"
         />
 
       </div>
